@@ -30,8 +30,6 @@ app.get('/', (req, res) => {
   const domain = DOMAINS[host]
   const keywords = KEYWORDS[host]
 
-  console.log("host", host)
-
   res.render("index", {
     domain,
     keywords

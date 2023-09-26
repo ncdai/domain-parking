@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title><%= domain %></title>
-  <meta name="description" content="Tên miền <%= domain %> - Tương lai của Doanh nghiệp bắt đầu từ đây!" />
+  <meta name="description" content="Tên miền <%= domain %>. Tương lai của Doanh nghiệp bắt đầu từ đây!" />
   <meta name="keywords" content="<%= keywords %>">
   <meta name="author" content="Quaric">
   <meta name="theme-color" content="#040D17" />
@@ -32,6 +32,16 @@
       color: #EAF3FF;
     }
 
+    a {
+      color: #7789A2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #EAF3FF;
+      text-decoration: underline;
+    }
+
     .content {
       padding: 16px;
     }
@@ -46,16 +56,27 @@
     }
 
     .description {
-      font-size: 24px;
-      text-align: center;
       margin-top: 0;
       margin-bottom: 16px;
+
+      font-size: 24px;
+      text-align: center;
     }
 
     .illustration {
+      display: flex;
+      justify-content: center;
+    }
+
+    .illustration img {
       width: 400px;
       max-width: 100%;
       height: auto;
+      margin-bottom: 16px;
+    }
+
+    .contact {
+      text-align: center;
     }
   </style>
 </head>
@@ -63,8 +84,13 @@
 <body>
   <div class="content">
     <h1 class="domain"><%= domain %></h1>
-    <p class="description">Tương lai của Doanh nghiệp bắt đầu từ đây!</p>
-    <img src="/startup.webp" class="illustration" />
+    <p class="description">Tên miền. Thương hiệu. Tương lai của Doanh nghiệp bắt đầu từ đây!</p>
+    <div class="illustration">
+      <img src="/startup.webp" alt="Startup"/>
+    </div>
+    <div class="contact">
+      <a href="mailto:info+domain@quaric.com?subject=<%= domain %>" target="_blank">Liên hệ</a>
+    </div>
   </div>
 </body>
 
