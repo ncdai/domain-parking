@@ -27,6 +27,8 @@ const DOMAINS = {
   'viebus.com': 'VieBus.com',
   'viebase.com': 'VieBase.com',
   'viesafe.com': 'VieSafe.com',
+  'quicksrc.com': 'QuickSrc.com',
+  '1passkeys.com': '1Passkeys.com',
 }
 
 const KEYWORDS = {
@@ -51,6 +53,8 @@ const KEYWORDS = {
   'viebus.com': 'viebus.com, viebus, vie bus',
   'viebase.com': 'viebase.com, viebase, vie base',
   'viesafe.com': 'viesafe.com, viesafe, vie safe',
+  'quicksrc.com': 'quicksrc.com, quicksrc, quick src',
+  '1passkeys.com': '1passkeys.com, 1passkeys',
 }
 
 app.get('/', (req, res) => {
