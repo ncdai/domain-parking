@@ -23,6 +23,10 @@ const DOMAINS = {
   'sieuungdung.com': 'SieuUngDung.com',
   'vuongquochoa.com': 'VuongQuocHoa.com',
   'vuongquoc.net': 'VuongQuoc.net',
+  'viecons.com': 'VieCons.com',
+  'viebus.com': 'VieBus.com',
+  'viebase.com': 'VieBase.com',
+  'viesafe.com': 'VieSafe.com',
 }
 
 const KEYWORDS = {
@@ -43,6 +47,10 @@ const KEYWORDS = {
   'sieuungdung.com': 'sieuungdung.com, sieu ung dung, sieuungdung',
   'vuongquochoa.com': 'vuongquochoa.com, vuong quoc hoa, vuongquochoa',
   'vuongquoc.net': 'vuongquoc.net, vuong quoc, vuongquoc',
+  'viecons.com': 'viecons.com, viecons, vie cons',
+  'viebus.com': 'viebus.com, viebus, vie bus',
+  'viebase.com': 'viebase.com, viebase, vie base',
+  'viesafe.com': 'viesafe.com, viesafe, vie safe',
 }
 
 app.get('/', (req, res) => {
