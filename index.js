@@ -13,6 +13,7 @@ const DOMAINS = {
   'tiendidong.com': 'TienDiDong.com',
   'metabox.vn': 'MetaBox.vn',
   'use.com.vn': 'Use.com.vn',
+  'px.com.vn': "px.com.vn"
   'maytinhviet.com': 'MayTinhViet.com',
   'vuanhadat.com': 'VuaNhaDat.com',
   'vuadidong.com': 'VuaDiDong.com',
@@ -39,6 +40,7 @@ const KEYWORDS = {
   'tiendidong.com': 'tiendidong, tien di dong, tien di dong, tiendidong',
   'metabox.vn': 'metabox.vn, metabox, meta box',
   'use.com.vn': 'use.com.vn, use',
+  "px.com.vn": "px.com.vn, px",
   'maytinhviet.com': 'maytinhviet.com, may tinh viet, may tinh, maytinh',
   'vuanhadat.com': 'vuanhadat.com, vua nha dat, vuanhadat',
   'vuadidong.com': 'vuadidong.com, vua di dong, vuadidong',
