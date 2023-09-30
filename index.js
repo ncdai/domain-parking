@@ -8,7 +8,6 @@ app.set("view engine", "ejs")
 app.use(cors())
 
 const DOMAINS = {
-  'localhost:1408': 'NguyenChanhDai.com',
   'tienphonggroup.com': 'TienPhongGroup.com',
   'kimcuonggroup.com': 'KimCuongGroup.com',
   'nangluonggio.com': 'NangLuongGio.com',
@@ -35,7 +34,6 @@ const DOMAINS = {
 }
 
 const KEYWORDS = {
-  'localhost:1408': 'NguyenChanhDai, Nguyen Chanh Dai, Dai Nguyen, Chanh Dai Nguyen',
   'tienphonggroup.com': 'tienphonggroup, tien phong group, tien phong, tienphong, tien phong group',
   'kimcuonggroup.com': 'kimcuonggroup, kim cuong group, kim cuong, kimcuong',
   'nangluonggio.com': 'nangluonggio, nang luong gio, nang luong, nangluong',
@@ -65,6 +63,8 @@ app.get('/', (req, res) => {
   const host = req.get('host')
   const domain = DOMAINS[host]
   const keywords = KEYWORDS[host]
+
+  if (!domain) return res.send(host)
 
   res.render("index", {
     domain,
