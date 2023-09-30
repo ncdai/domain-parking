@@ -13,7 +13,7 @@ const DOMAINS = {
   'tiendidong.com': 'TienDiDong.com',
   'metabox.vn': 'MetaBox.vn',
   'use.com.vn': 'Use.com.vn',
-  'px.com.vn': "px.com.vn"
+  'px.com.vn': "px.com.vn",
   'maytinhviet.com': 'MayTinhViet.com',
   'vuanhadat.com': 'VuaNhaDat.com',
   'vuadidong.com': 'VuaDiDong.com',
