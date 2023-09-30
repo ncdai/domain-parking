@@ -1,9 +1,11 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const port = process.env.PORT || 1408
 
 app.use(express.static('static'))
 app.set("view engine", "ejs")
+app.use(cors())
 
 const DOMAINS = {
   'localhost:1408': 'NguyenChanhDai.com',
@@ -68,6 +70,12 @@ app.get('/', (req, res) => {
     domain,
     keywords
   })
+})
+
+app.get('/api/domains', (req, res) => {
+  res.json(Object.values(DOMAINS).sort(
+    (a, b) => a.localeCompare(b)
+  ))
 })
 
 app.listen(port, () => {
