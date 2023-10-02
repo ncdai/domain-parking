@@ -4,7 +4,7 @@ const cors = require('cors')
 const port = process.env.PORT || 1408
 
 app.use(express.static('static'))
-app.set("view engine", "ejs")
+app.set('view engine', 'ejs')
 app.use(cors())
 
 const DOMAINS = {
@@ -14,7 +14,8 @@ const DOMAINS = {
   'tiendidong.com': 'TienDiDong.com',
   'metabox.vn': 'MetaBox.vn',
   'use.com.vn': 'Use.com.vn',
-  'px.com.vn': "px.com.vn",
+  'px.com.vn': 'px.com.vn',
+  'xcode.vn': 'Xcode.vn',
   'kich.vn': 'Kich.vn',
   'maytinhviet.com': 'MayTinhViet.com',
   'vuanhadat.com': 'VuaNhaDat.com',
@@ -41,7 +42,8 @@ const KEYWORDS = {
   'tiendidong.com': 'tiendidong, tien di dong, tien di dong, tiendidong',
   'metabox.vn': 'metabox.vn, metabox, meta box',
   'use.com.vn': 'use.com.vn, use',
-  "px.com.vn": "px.com.vn, px",
+  'px.com.vn': 'px.com.vn, px',
+  'xcode.vn': 'xcode.vn, xcode'
   'kich.vn': 'kich.vn, kich, kịch',
   'maytinhviet.com': 'maytinhviet.com, may tinh viet, may tinh, maytinh',
   'vuanhadat.com': 'vuanhadat.com, vua nha dat, vuanhadat',
@@ -68,7 +70,7 @@ app.get('/', (req, res) => {
 
   if (!domain) return res.send(host)
 
-  res.render("index", {
+  res.render('index', {
     domain,
     keywords
   })
