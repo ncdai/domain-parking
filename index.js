@@ -43,7 +43,7 @@ const KEYWORDS = {
   'metabox.vn': 'metabox.vn, metabox, meta box',
   'use.com.vn': 'use.com.vn, use',
   'px.com.vn': 'px.com.vn, px',
-  'xcode.vn': 'xcode.vn, xcode'
+  'xcode.vn': 'xcode.vn, xcode',
   'kich.vn': 'kich.vn, kich, kịch',
   'maytinhviet.com': 'maytinhviet.com, may tinh viet, may tinh, maytinh',
   'vuanhadat.com': 'vuanhadat.com, vua nha dat, vuanhadat',
