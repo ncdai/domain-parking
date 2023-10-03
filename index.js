@@ -7,7 +7,7 @@ app.use(express.static('static'))
 app.set('view engine', 'ejs')
 app.use(cors())
 
-const DOMAINS = {
+const DOMAIN_NAME_MAPS = {
   'tienphonggroup.com': 'TienPhongGroup.com',
   'kimcuonggroup.com': 'KimCuongGroup.com',
   'nangluonggio.com': 'NangLuongGio.com',
@@ -31,11 +31,10 @@ const DOMAINS = {
   'viebus.com': 'VieBus.com',
   'viebase.com': 'VieBase.com',
   'viesafe.com': 'VieSafe.com',
-  'quicksrc.com': 'QuickSrc.com',
-  '1passkeys.com': '1Passkeys.com',
+  'quicksrc.com': 'QuickSrc.com'
 }
 
-const KEYWORDS = {
+const KEYWORD_MAPS = {
   'tienphonggroup.com': 'tienphonggroup, tien phong group, tien phong, tienphong, tien phong group',
   'kimcuonggroup.com': 'kimcuonggroup, kim cuong group, kim cuong, kimcuong',
   'nangluonggio.com': 'nangluonggio, nang luong gio, nang luong, nangluong',
@@ -59,14 +58,23 @@ const KEYWORDS = {
   'viebus.com': 'viebus.com, viebus, vie bus',
   'viebase.com': 'viebase.com, viebase, vie base',
   'viesafe.com': 'viesafe.com, viesafe, vie safe',
-  'quicksrc.com': 'quicksrc.com, quicksrc, quick src',
-  '1passkeys.com': '1passkeys.com, 1passkeys',
+  'quicksrc.com': 'quicksrc.com, quicksrc, quick src'
 }
+
+const DOMAINS_LIST = Object.values(DOMAIN_NAME_MAPS).sort(
+  (a, b) => a.localeCompare(b)
+)
 
 app.get('/', (req, res) => {
   const host = req.get('host')
-  const domain = DOMAINS[host]
-  const keywords = KEYWORDS[host]
+  const domain = DOMAIN_NAME_MAPS[host]
+  const keywords = KEYWORD_MAPS[host]
+
+  if (['vuatenmien.net', 'localhost:1408'].includes(host)) {
+    return res.render('home', {
+      domains: DOMAINS_LIST
+    })
+  }
 
   if (!domain) return res.send(host)
 
@@ -77,9 +85,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/domains', (req, res) => {
-  res.json(Object.values(DOMAINS).sort(
-    (a, b) => a.localeCompare(b)
-  ))
+  res.json(DOMAINS_LIST)
 })
 
 app.listen(port, () => {
