@@ -33,7 +33,7 @@ const DOMAIN_NAME_MAPS = {
   'viesafe.com': 'VieSafe.com',
   'quicksrc.com': 'QuickSrc.com',
   'tonmau.com': 'TonMau.com',
-  'webtailieu': 'WebTaiLieu.com',
+  'webtailieu.com': 'WebTaiLieu.com',
   'bongngo.com': 'BongNgo.com',
   'hanoilaw.com': 'HaNoiLaw.com',
 }
