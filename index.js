@@ -31,7 +31,11 @@ const DOMAIN_NAME_MAPS = {
   'viebus.com': 'VieBus.com',
   'viebase.com': 'VieBase.com',
   'viesafe.com': 'VieSafe.com',
-  'quicksrc.com': 'QuickSrc.com'
+  'quicksrc.com': 'QuickSrc.com',
+  'tonmau.com': 'TonMau.com',
+  'webtailieu': 'WebTaiLieu.com',
+  'bongngo.com': 'BongNgo.com',
+  'hanoilaw.com': 'HaNoiLaw.com',
 }
 
 const KEYWORD_MAPS = {
@@ -58,7 +62,11 @@ const KEYWORD_MAPS = {
   'viebus.com': 'viebus.com, viebus, vie bus',
   'viebase.com': 'viebase.com, viebase, vie base',
   'viesafe.com': 'viesafe.com, viesafe, vie safe',
-  'quicksrc.com': 'quicksrc.com, quicksrc, quick src'
+  'quicksrc.com': 'quicksrc.com, quicksrc, quick src',
+  'tonmau.com': 'tonmau.com, tonmau, ton mau',
+  'webtailieu.com': 'webtailieu.com, webtailieu, web tai lieu',
+  'bongngo.com': 'bongngo.com, bongngo, bong ngo',
+  'hanoilaw.com': 'hanoilaw.com, hanoilaw, ha noi law',
 }
 
 const DOMAINS_LIST = Object.values(DOMAIN_NAME_MAPS).sort(
@@ -78,7 +86,7 @@ app.get('/', (req, res) => {
 
   if (!domain) return res.send(host)
 
-  res.render('index', {
+  res.render('domain', {
     domain,
     keywords
   })
