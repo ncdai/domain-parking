@@ -2,7 +2,7 @@
   "name": "sell-domains",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:iamncdai/sale-domain.git",
+  "repository": "git@github.com:iamncdai/sell-domains.git",
   "author": "Nguyễn Chánh Đại <ncdai@penphy.edu.vn>",
   "license": "MIT",
   "scripts": {
