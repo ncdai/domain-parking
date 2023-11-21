@@ -30,6 +30,10 @@
       margin: 0 0 32px 0;
     }
 
+    .domains ul a {
+      font-size: 24px;
+    }
+
     @media (min-width: 640px) {
       .domains ul {
         grid-template-columns: repeat(3,minmax(0,1fr));
@@ -46,14 +50,14 @@
     <div class="domains">
       <ul>
         <% domains.forEach(function(domain, index) { %>
-          <li><a href="https://<%= domain.toLowerCase() %>" target="_blank"><%= index + 1 %>. <%= domain %></a></li>
+          <li><a href="https://<%= domain.toLowerCase() %>" target="_blank"><%= domain %></a></li>
         <% }); %>
       </ul>
     </div>
 
     <div class="footer">
       <span class="copyright">© 2023 Quaric Domains.</span>
-      <a href="mailto:hello+domain@quaric.com" target="_blank">Liên hệ.</a>
+      <a href="mailto:hello+domain@quaric.com" target="_blank">Liên hệ</a>
     </div>
   </div>
 </body>
