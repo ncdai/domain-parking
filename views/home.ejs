@@ -50,14 +50,14 @@
     <div class="domains">
       <ul>
         <% domains.forEach(function(domain, index) { %>
-          <li><a href="https://<%= domain.toLowerCase() %>" target="_blank"><%= domain %></a></li>
+          <li><a href="https://<%= domain.toLowerCase() %>" target="_blank" rel="noopener noreferrer"><%= domain %></a></li>
         <% }); %>
       </ul>
     </div>
 
     <div class="footer">
-      <span class="copyright">© 2023 Quaric Domains.</span>
-      <a href="mailto:hello+domain@quaric.com" target="_blank">Liên hệ</a>
+      <span class="copyright">© 2023 Quaric Domains</span>
+      <a href="mailto:hello+domain@quaric.com" target="_blank" rel="noopener noreferrer">Liên hệ</a>
     </div>
   </div>
 </body>

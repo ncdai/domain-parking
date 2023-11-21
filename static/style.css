@@ -60,6 +60,11 @@ a:hover {
 .footer {
   text-align: center;
   font-size: 24px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .copyright {
