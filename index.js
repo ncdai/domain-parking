@@ -105,5 +105,5 @@ app.get('/api/domains', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Sale Domain app listening on port ${port}`)
+  console.log(`SellDomains app listening on port ${port}`)
 })
