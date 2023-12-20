@@ -5,60 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>VuaTenMien.net</title>
-  <meta name="description" content="Bạn không chỉ mua 1 tên miền, bạn đang làm 1 cách tốt nhất để bảo vệ thương hiệu!" />
-  <meta name="keywords" content="<%= domains.join(", ") %>">
+  <title>Sell Domains</title>
+  <meta name="description" content="Sell Domains" />
   <meta name="author" content="Quaric Domains">
   <meta name="theme-color" content="#040D17" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    .description {
-      margin-bottom: 32px;
-    }
-
-    .domains ul {
-      display: grid;
-      gap: 0.5rem;
-
-      list-style-type: none;
-      padding: 0;
-      margin: 0 0 32px 0;
-    }
-
-    .domains ul a {
-      font-size: 24px;
-    }
-
-    @media (min-width: 640px) {
-      .domains ul {
-        grid-template-columns: repeat(3,minmax(0,1fr));
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="tailwind.css">
 </head>
 
 <body>
-  <div class="content">
-    <h1 class="domain">VuaTenMien.net</h1>
-    <p class="description">Bạn không chỉ mua 1 tên miền, bạn đang làm 1 cách tốt nhất để bảo vệ thương hiệu!</p>
-
-    <div class="domains">
-      <ul>
-        <% domains.forEach(function(domain, index) { %>
-          <li><a href="https://<%= domain.toLowerCase() %>" target="_blank" rel="noopener noreferrer"><%= domain %></a></li>
-        <% }); %>
-      </ul>
-    </div>
-
-    <div class="footer">
-      <span class="copyright">© 2023 Quaric Domains</span>
-      <a href="mailto:hello+domains@quaric.com" target="_blank" rel="noopener noreferrer">Liên hệ</a>
-    </div>
+  <div class="container mx-auto">
+    <%= domain %>
   </div>
 </body>
 

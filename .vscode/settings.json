@@ -1,0 +1,6 @@
+{
+  "css.customData": [
+    // Ref: https://github.com/tailwindlabs/tailwindcss/discussions/5258#discussioncomment-1979394
+    ".vscode/tailwind.json"
+  ]
+}
