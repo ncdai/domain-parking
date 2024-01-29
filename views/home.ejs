@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title><%= domain %></title>
+
   <meta name="description" content="<%= domain %>" />
+  <meta name="theme-color" content="#040D17" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +20,13 @@
   <div class="fixed bg-primary-900 bg-grid-primary-800/[0.5] w-full h-full top-0 left-0 flex items-center justify-center">
     <div class="absolute inset-0 top-0 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] bg-primary-900 pointer-events-none"></div>
 
-    <h1 class="relative z-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display select-none bg-clip-text text-transparent bg-gradient-to-b from-primary-50 to-primary-500 p-8">
+    <p class="relative z-10 text-3xl md:text-4xl lg:text-5xl font-display select-none bg-clip-text text-transparent bg-gradient-to-b from-primary-50 to-primary-500 p-8 text-center">
       <%= domain %>
-    </h1>
+    </p>
+
+    <footer class="absolute bottom-4">
+      <p class="text-sm dark:text-primary-300 select-none">© <%= new Date().getFullYear(); %> Quaric. All rights reserved.</p>
+    </footer>
   </div>
 </body>
 
