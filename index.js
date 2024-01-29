@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const domainCase = require('./domain-case')
 const port = process.env.PORT || 1408
 
 app.use(express.static('static'))
@@ -11,7 +12,7 @@ app.get('/', (req, res) => {
   const host = req.get('host')
 
   res.render('home', {
-    domain: host,
+    domain: domainCase[host] || host,
   })
 })
 
