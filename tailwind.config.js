@@ -25,7 +25,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      'display': ['Oswald'],
+      'display': ['"Roboto Condensed"', 'sans-serif'],
     },
   },
   plugins: [

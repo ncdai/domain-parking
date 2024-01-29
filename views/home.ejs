@@ -12,7 +12,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="tailwind.css">
 </head>
 
@@ -20,12 +20,12 @@
   <div class="fixed bg-primary-900 bg-grid-primary-800/[0.5] w-full h-full top-0 left-0 flex items-center justify-center">
     <div class="absolute inset-0 top-0 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] bg-primary-900 pointer-events-none"></div>
 
-    <p class="relative z-10 text-3xl md:text-4xl lg:text-5xl font-display select-none bg-clip-text text-transparent bg-gradient-to-b from-primary-50 to-primary-500 p-8 text-center">
+    <p class="relative z-10 text-3xl md:text-4xl lg:text-5xl font-display font-medium select-none bg-clip-text text-transparent bg-gradient-to-b from-primary-50 to-primary-500 p-8 text-center">
       <%= domain %>
     </p>
 
     <footer class="absolute bottom-4">
-      <p class="text-sm dark:text-primary-300 select-none">© <%= new Date().getFullYear(); %> Quaric. All rights reserved.</p>
+      <p class="text-sm text-primary-300 font-display select-none">© <%= new Date().getFullYear(); %> Quaric. All rights reserved.</p>
     </footer>
   </div>
 </body>
