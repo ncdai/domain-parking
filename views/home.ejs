@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sell Domains</title>
-  <meta name="description" content="Sell Domains" />
-  <meta name="author" content="Quaric Domains">
-  <meta name="theme-color" content="#040D17" />
+  <title><%= domain %></title>
+  <meta name="description" content="<%= domain %>" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +15,12 @@
 </head>
 
 <body>
-  <div class="container mx-auto">
-    <%= domain %>
+  <div class="fixed bg-primary-900 bg-grid-primary-800/[0.5] w-full h-full top-0 left-0 flex items-center justify-center">
+    <div class="absolute inset-0 top-0 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] bg-primary-900 pointer-events-none"></div>
+
+    <h1 class="relative z-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display select-none bg-clip-text text-transparent bg-gradient-to-b from-primary-50 to-primary-500">
+      <%= domain %>
+    </h1>
   </div>
 </body>
 
