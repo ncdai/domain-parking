@@ -1,5 +1,14 @@
 module.exports = {
-  'localhost:1408': 'Dev',
   'tienphonggroup.com': 'TienPhongGroup.com',
-  'senda.vn': 'Senda.vn',
+  'vietgreenfood.com': 'VietGreenFood.com',
+  'maytinhviet.com': 'MayTinhViet.com',
+  'vuanhadat.com': 'VuaNhaDat.com',
+  'vuadidong.com': 'VuaDiDong.com',
+  'bongngo.com': 'BongNgo.com',
+  'khieunai.com': 'KhieuNai.com',
+  'kysu.vn': 'KySu.vn',
+  'topweb.vn': 'TopWeb.vn',
+  'metabox.vn': 'MetaBox.vn',
+  'cdx.vn': 'CDX.vn',
+  'xr.io.vn': 'XR.io.vn',
 };
