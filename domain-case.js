@@ -11,4 +11,5 @@ module.exports = {
   'metabox.vn': 'MetaBox.vn',
   'cdx.vn': 'CDX.vn',
   'xr.io.vn': 'XR.io.vn',
+  'xr.ai.vn': 'XR.ai.vn',
 };
