@@ -3,6 +3,7 @@ const app = express()
 const cors = require('cors')
 
 const domainCase = require('./domain-case')
+const domainNotSale = require('./domain-not-sale')
 // const domainSale = require('./domain-sale')
 
 const port = process.env.PORT || 1408
@@ -18,8 +19,8 @@ app.get('/', (req, res) => {
 
   res.render('home', {
     domain: domainCase[host] || capitalizeFirstLetter(host),
+    isForSale: !domainNotSale.includes(host),
     // isForSale: domainSale.includes(host),
-    isForSale: true,
   })
 })
 
