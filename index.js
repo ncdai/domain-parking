@@ -1,7 +1,10 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+
 const domainCase = require('./domain-case')
+// const domainSale = require('./domain-sale')
+
 const port = process.env.PORT || 1408
 
 const capitalizeFirstLetter = (word) => word.charAt(0).toUpperCase() + word.slice(1)
@@ -15,6 +18,8 @@ app.get('/', (req, res) => {
 
   res.render('home', {
     domain: domainCase[host] || capitalizeFirstLetter(host),
+    // isForSale: domainSale.includes(host),
+    isForSale: true,
   })
 })
 
