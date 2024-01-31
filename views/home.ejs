@@ -21,20 +21,20 @@
     <div class="absolute inset-0 top-0 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] bg-primary-900 pointer-events-none"></div>
 
     <div class="relative z-10">
-      <p class="text-3xl md:text-4xl lg:text-5xl font-display font-medium bg-clip-text text-transparent bg-gradient-to-b from-primary-50 to-primary-500 py-8 text-center">
+      <p class="text-3xl md:text-4xl lg:text-5xl py-8 font-medium text-center">
         <%= domain %>
       </p>
 
       <% if (isForSale) { %>
         <div class="flex flex-wrap gap-4 justify-center items-center flex-col md:flex-row">
-          <span class="bg-primary-800 text-primary-300 rounded-full flex items-center px-4 py-2 font-medium">Domain name is for sale</span>
-          <a href="mailto:hello@quaric.com?subject=<%= domain %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-white text-primary-700 hover:bg-primary-100 select-none">Make an offer</a>
+          <span class="flex items-center px-4 py-2 rounded-full bg-primary-800 font-medium">Domain name is for sale</span>
+          <a href="mailto:hello@quaric.com?subject=<%= domain %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-white text-primary-900 hover:bg-primary-100 select-none">Make an offer</a>
         </div>
       <% } %>
     </div>
 
     <footer class="absolute bottom-4">
-      <p class="text-sm text-primary-300 font-display">© <%= new Date().getFullYear(); %> Quaric. All rights reserved.</p>
+      <p class="text-sm text-primary-300">© <%= new Date().getFullYear(); %> Quaric. All rights reserved.</p>
     </footer>
   </div>
 </body>
