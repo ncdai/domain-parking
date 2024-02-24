@@ -6,6 +6,7 @@ module.exports = {
   'vuadidong.com': 'VuaDiDong.com',
   'bongngo.com': 'BongNgo.com',
   'khieunai.com': 'KhieuNai.com',
+  'hugevietnam.com': 'HugeVietNam.com',
   'kysu.vn': 'KySu.vn',
   'topweb.vn': 'TopWeb.vn',
   'metabox.vn': 'MetaBox.vn',
