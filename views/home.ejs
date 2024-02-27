@@ -18,38 +18,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tailwind.css?t=1709057844">
+  <link rel="stylesheet" href="tailwind.css?t=1709061310">
+
+  <style>
+    body {
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .text-full-width {
+      display: inline-block;
+      transform-origin: 0 0;
+      transform: translate3d(0, 0, 0);
+    }
+  </style>
 </head>
 
-<body>
+<body style="opacity: 0;">
   <div class="fixed bg-primary-900 bg-grid-primary-800/[0.5] w-full h-full top-0 left-0 flex items-center justify-center p-4">
     <div class="absolute top-0 left-0 bottom-0 right-0 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] bg-primary-900 pointer-events-none"></div>
 
-    <div class="relative z-10 w-screen">
-      <h1 class="py-8 font-medium text-[8vw] lg:text-[6vw] xl:text-[4vw] text-center" id="domain">
-        <%= domain %>
-      </h1>
+    <div class="relative z-10 w-screen space-y-2">
+      <div class="transition-colors duration-300 hover:text-blue-600">
+        <h1 class="font-medium text-center text-full-width">
+          <%= domain %>
+        </h1>
+      </div>
 
-      <% if (isForSale) { %>
-        <div class="flex flex-wrap gap-4 justify-center items-center flex-col md:flex-row">
-          <span class="flex items-center px-4 py-2 rounded-full bg-primary-800 font-medium">Domain name is for sale</span>
-          <a href="mailto:hello@quaric.com?subject=<%= domain %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-white text-primary-900 hover:bg-primary-100 select-none">Make an offer</a>
-        </div>
-      <% } else { %>
-        <p class="md:text-2xl text-primary-300 text-center">Our new website is <strong class="text-white font-normal">launching soon</strong>.</p>
-      <% } %>
+      <div class="sticky bottom-4">
+        <% if (isForSale) { %>
+          <div class="flex flex-wrap gap-4 justify-center items-center flex-col md:flex-row">
+            <span class="flex items-center px-4 py-2 rounded-full bg-primary-800 font-medium">Domain name is for sale</span>
+            <a href="mailto:hello@quaric.com?subject=<%= domain %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-white text-primary-900 hover:bg-primary-100 select-none">Make an offer</a>
+          </div>
+        <% } else { %>
+          <p class="sm:text-2xl text-primary-300 text-center">Our new website is <strong class="text-white font-normal">launching soon</strong>.</p>
+        <% } %>
+      </div>
     </div>
-
-    <footer class="absolute bottom-4">
-      <p class="text-sm text-primary-300">© <%= new Date().getFullYear(); %> Quaric. All rights reserved.</p>
-    </footer>
   </div>
 
-  <script src="jquery.min.js"></script>
-  <script src="jquery.fittext.js"></script>
-  <script>
-    $("#domain").fitText(1.2);
-  </script>
+  <script src="text-full-width.js"></script>
 </body>
 
 </html>
