@@ -7,13 +7,18 @@
 
   <title><%= domain %></title>
 
-  <meta name="description" content="<%= domain %>" />
+  <% if (isForSale) { %>
+    <meta name="description" content="The domain name <%= domain %> is for sale." />
+  <% } else { %>
+    <meta name="description" content="Our new website is launching soon." />
+  <% } %>
+
   <meta name="theme-color" content="#040D17" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tailwind.css?t=1706721558">
+  <link rel="stylesheet" href="tailwind.css?t=1709056260">
 </head>
 
 <body>
@@ -21,15 +26,17 @@
     <div class="absolute inset-0 top-0 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] bg-primary-900 pointer-events-none"></div>
 
     <div class="relative z-10">
-      <p class="text-[8vw] lg:text-[6vw] xl:text-[4vw] py-8 font-medium text-center">
+      <h1 class="text-[8vw] lg:text-[6vw] xl:text-[4vw] py-8 font-medium text-center">
         <%= domain %>
-      </p>
+      </h1>
 
       <% if (isForSale) { %>
         <div class="flex flex-wrap gap-4 justify-center items-center flex-col md:flex-row">
           <span class="flex items-center px-4 py-2 rounded-full bg-primary-800 font-medium">Domain name is for sale</span>
           <a href="mailto:hello@quaric.com?subject=<%= domain %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-white text-primary-900 hover:bg-primary-100 select-none">Make an offer</a>
         </div>
+      <% } else { %>
+        <p class="text-2xl text-primary-300 text-center">Our new website is <strong class="text-white font-normal">launching soon</strong>.</p>
       <% } %>
     </div>
 
