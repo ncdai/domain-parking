@@ -18,15 +18,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tailwind.css?t=1709056623">
+  <link rel="stylesheet" href="tailwind.css?t=1709057844">
 </head>
 
 <body>
   <div class="fixed bg-primary-900 bg-grid-primary-800/[0.5] w-full h-full top-0 left-0 flex items-center justify-center p-4">
     <div class="absolute top-0 left-0 bottom-0 right-0 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] bg-primary-900 pointer-events-none"></div>
 
-    <div class="relative z-10">
-      <h1 class="text-[8vw] lg:text-[6vw] xl:text-[4vw] py-8 font-medium text-center">
+    <div class="relative z-10 w-screen">
+      <h1 class="py-8 font-medium text-[8vw] lg:text-[6vw] xl:text-[4vw] text-center" id="domain">
         <%= domain %>
       </h1>
 
@@ -44,6 +44,12 @@
       <p class="text-sm text-primary-300">© <%= new Date().getFullYear(); %> Quaric. All rights reserved.</p>
     </footer>
   </div>
+
+  <script src="jquery.min.js"></script>
+  <script src="jquery.fittext.js"></script>
+  <script>
+    $("#domain").fitText(1.2);
+  </script>
 </body>
 
 </html>
