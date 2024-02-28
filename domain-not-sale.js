@@ -1,7 +1,8 @@
 module.exports = [
   'localhost:1408',
-  'ncdai-mbp-m1.local:1408',
+  'design.edu.vn',
   'apple.io.vn',
   'apple.id.vn',
-  "design.edu.vn"
+  'vision.io.vn',
+  'dai.io.vn',
 ];
