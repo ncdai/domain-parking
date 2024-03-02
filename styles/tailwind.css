@@ -6,4 +6,8 @@
   body {
     @apply bg-primary-900 text-white font-display;
   }
+
+  ::selection {
+    @apply bg-primary-700 text-white;
+  }
 }
