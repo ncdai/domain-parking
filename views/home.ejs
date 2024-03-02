@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tailwind.css?t=1709392175">
+  <link rel="stylesheet" href="tailwind.css?t=1709392923">
 
   <style>
     body {
@@ -38,7 +38,7 @@
     <div class="absolute top-0 left-0 bottom-0 right-0 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] bg-black pointer-events-none"></div>
 
     <div class="relative z-10 w-screen space-y-4">
-      <div class="transition-colors duration-300 hover:text-blue-600">
+      <div>
         <h1 class="font-medium text-center text-full-width bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
           <%= domain %>
         </h1>
@@ -47,16 +47,16 @@
       <div class="sticky bottom-4">
         <div class="flex flex-wrap gap-4 justify-center items-center flex-col md:flex-row">
           <% if (isForSale) { %>
-            <span class="flex items-center px-4 py-2 rounded-full bg-neutral-800 font-medium">Domain name is for sale</span>
-            <a href="mailto:hello@quaric.com?subject=<%= domain %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-white text-black hover:bg-neutral-300 select-none">Make an offer</a>
+            <span class="flex items-center px-4 py-2 rounded-full bg-neutral-900 font-medium text-neutral-200 select-none">Domain name is for sale</span>
+            <a href="mailto:hello@quaric.com?subject=<%= domain %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-neutral-200 text-neutral-900 hover:bg-neutral-300 select-none">Make an offer</a>
           <% } else { %>
-            <span class="px-4 py-2 rounded-full bg-neutral-800">
-              Our new website is <strong class="font-medium">launching soon</strong>
+            <span class="px-4 py-2 rounded-full text-neutral-200 bg-neutral-900 font-medium select-none">
+              Our new website is launching soon
             </span>
           <% } %>
 
           <a href="https://www.digitalocean.com/?refcode=474b42f30e7d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" title="DigitalOcean Referral Badge" aria-label="DigitalOcean Referral Badge">
-            <img class="block rounded-full h-10" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" />
+            <img class="block rounded-full h-10 select-none" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" />
           </a>
         </div>
       </div>
