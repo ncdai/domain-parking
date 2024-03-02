@@ -37,7 +37,7 @@
   <div class="fixed bg-primary-900 bg-grid-primary-800/[0.5] w-full h-full top-0 left-0 flex items-center justify-center p-4">
     <div class="absolute top-0 left-0 bottom-0 right-0 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] bg-primary-900 pointer-events-none"></div>
 
-    <div class="relative z-10 w-screen space-y-2">
+    <div class="relative z-10 w-screen space-y-4">
       <div class="transition-colors duration-300 hover:text-blue-600">
         <h1 class="font-medium text-center text-full-width">
           <%= domain %>
@@ -45,20 +45,22 @@
       </div>
 
       <div class="sticky bottom-4 space-y-4">
-        <% if (isForSale) { %>
-          <div class="flex flex-wrap gap-4 justify-center items-center flex-col md:flex-row">
+        <div class="flex flex-wrap gap-4 justify-center items-center flex-col md:flex-row">
+          <% if (isForSale) { %>
             <span class="flex items-center px-4 py-2 rounded-full bg-primary-800 font-medium">Domain name is for sale</span>
             <a href="mailto:hello@quaric.com?subject=<%= domain %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-white text-primary-900 hover:bg-primary-100 select-none">Make an offer</a>
-          </div>
-        <% } else { %>
-          <p class="sm:text-2xl text-primary-300 text-center">Our new website is <strong class="text-white font-normal">launching soon</strong>.</p>
-        <% } %>
+          <% } else { %>
+            <span class="px-4 py-2 rounded-full bg-primary-800">
+              Our new website is <strong class="font-medium">launching soon</strong>
+            </span>
+          <% } %>
+
+          <a href="https://www.digitalocean.com/?refcode=474b42f30e7d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" title="DigitalOcean Referral Badge" aria-label="DigitalOcean Referral Badge">
+            <img class="block rounded-full h-10" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" />
+          </a>
+        </div>
       </div>
     </div>
-
-    <a class="absolute bottom-4 z-10" href="https://www.digitalocean.com/?refcode=474b42f30e7d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" title="DigitalOcean Referral Badge" aria-label="DigitalOcean Referral Badge">
-      <img class="block rounded-md h-12" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" />
-    </a>
   </div>
 
   <script src="text-full-width.js"></script>
