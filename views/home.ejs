@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tailwind.css?t=1709393537">
+  <link rel="stylesheet" href="tailwind.css?t=ZCH0ldPZ">
 
   <style>
     body {
@@ -48,7 +48,7 @@
         <div class="flex flex-wrap gap-4 justify-center items-center flex-col md:flex-row">
           <% if (isForSale) { %>
             <span class="flex items-center px-4 py-2 rounded-full font-medium text-neutral-200 select-none">Domain name is for sale.</span>
-            <a href="mailto:hello@quaric.com?subject=<%= domain %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-neutral-200 text-neutral-900 hover:bg-neutral-300 select-none">Make an offer</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQtbDIHAXDEvAfLmG4OMN0h6CZOgtkKf4e09HWLwRnFmeEpA/viewform?usp=pp_url&entry.1782982522=<%= encodeURI(domain.toLowerCase()) %>&entry.38230875=1000000" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-neutral-200 text-neutral-900 hover:bg-neutral-300 select-none">Make an offer</a>
           <% } else { %>
             <span class="px-4 py-2 rounded-full font-medium text-neutral-200 select-none">
               Our new website is launching soon.
