@@ -8,9 +8,9 @@
   <title><%= domain %></title>
 
   <% if (isForSale) { %>
-    <meta name="description" content="The domain name <%= domain %> is for sale." />
+    <meta name="description" content="Tên miền <%= domain %> đang được rao bán." />
   <% } else { %>
-    <meta name="description" content="Our new website is launching soon." />
+    <meta name="description" content="Website của chúng tôi sẽ sớm được ra mắt." />
   <% } %>
 
   <meta name="theme-color" content="black" />
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tailwind.css?t=ZCH0ldPZ">
+  <link rel="stylesheet" href="tailwind.css?t=00T6Q7aq">
 
   <style>
     body {
@@ -47,11 +47,11 @@
       <div class="sticky bottom-4">
         <div class="flex flex-wrap gap-4 justify-center items-center flex-col md:flex-row">
           <% if (isForSale) { %>
-            <span class="flex items-center px-4 py-2 rounded-full font-medium text-neutral-200 select-none">Domain name is for sale.</span>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQtbDIHAXDEvAfLmG4OMN0h6CZOgtkKf4e09HWLwRnFmeEpA/viewform?usp=pp_url&entry.1782982522=<%= encodeURI(domain.toLowerCase()) %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-neutral-200 text-neutral-900 hover:bg-neutral-300 select-none">Make an offer</a>
+            <span class="flex items-center px-4 py-2 rounded-full font-medium text-neutral-200 select-none">Tên miền đang được rao bán</span>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQtbDIHAXDEvAfLmG4OMN0h6CZOgtkKf4e09HWLwRnFmeEpA/viewform?usp=pp_url&entry.1782982522=<%= encodeURI(domain.toLowerCase()) %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-neutral-200 text-neutral-900 hover:bg-neutral-300 select-none">Liên hệ</a>
           <% } else { %>
             <span class="px-4 py-2 rounded-full font-medium text-neutral-200 select-none">
-              Our new website is launching soon.
+              Website của chúng tôi sẽ sớm được ra mắt
             </span>
           <% } %>
 
