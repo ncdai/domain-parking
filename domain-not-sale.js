@@ -5,4 +5,5 @@ module.exports = [
   'apple.id.vn',
   'vision.io.vn',
   'dai.io.vn',
+  'ketnoi.me',
 ];
