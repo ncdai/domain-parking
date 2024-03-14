@@ -6,4 +6,5 @@ module.exports = [
   'vision.io.vn',
   'dai.io.vn',
   'ketnoi.me',
+  'maytinh.net',
 ];
