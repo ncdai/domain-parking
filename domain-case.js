@@ -12,6 +12,7 @@ module.exports = {
   'topweb.vn': 'TopWeb.vn',
   'metabox.vn': 'MetaBox.vn',
   'cdx.vn': 'CDX.vn',
+  'ncd.com.vn': 'NCD.com.vn',
   'xr.io.vn': 'XR.io.vn',
   'xr.ai.vn': 'XR.ai.vn',
   'cotienxanh.com': 'CoTienXanh.com',
