@@ -13,6 +13,7 @@ module.exports = {
   'metabox.vn': 'MetaBox.vn',
   'cdx.vn': 'CDX.vn',
   'ncd.com.vn': 'NCD.com.vn',
+  'ncd.io.vn': 'NCD.io.vn',
   'ketnoi.me': 'KetNoi.me',
   'xr.io.vn': 'XR.io.vn',
   'xr.ai.vn': 'XR.ai.vn',
