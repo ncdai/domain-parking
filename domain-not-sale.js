@@ -9,5 +9,6 @@ module.exports = [
   'maytinh.net',
   'ncd.com.vn',
   'ncd.io.vn',
+  'ncdai.net',
   'ncdai.me',
 ];
