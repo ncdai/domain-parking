@@ -14,7 +14,7 @@ module.exports = {
   'cdx.vn': 'CDX.vn',
   'ncd.com.vn': 'NCD.com.vn',
   'ncd.io.vn': 'NCD.io.vn',
-  'ketnoi.me': 'KetNoi.me',
+  'ketnoi.me': 'Ketnoi.me',
   'xr.io.vn': 'XR.io.vn',
   'xr.ai.vn': 'XR.ai.vn',
   'cotienxanh.com': 'CoTienXanh.com',
