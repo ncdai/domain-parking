@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="black" />
 
   <title><%= domain %></title>
 
@@ -13,20 +14,44 @@
     <meta name="description" content="Website của chúng tôi sẽ sớm được ra mắt." />
   <% } %>
 
-  <meta name="theme-color" content="black" />
-
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="<%= domain %>" />
+  <meta property="og:title" content="<%= domain %>" />
+  <% if (isForSale) { %>
+    <meta property="og:description" content="Tên miền <%= domain %> đang được rao bán." />
+  <% } else { %>
+    <meta property="og:description" content="Website của chúng tôi sẽ sớm được ra mắt." />
+  <% } %>
+  <meta property="og:locale" content="vi" />
   <meta
     property="og:image"
     content="<%= ogImageURL %>"
   />
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="<%= domain %>">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="<%= domain %>" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tailwind.css?t=00T6Q7aq">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<%= domain %>" />
+  <% if (isForSale) { %>
+    <meta property="twitter:description" content="Tên miền <%= domain %> đang được rao bán." />
+  <% } else { %>
+    <meta property="twitter:description" content="Website của chúng tôi sẽ sớm được ra mắt." />
+  <% } %>
+  <meta
+    property="twitter:image"
+    content="<%= ogImageURL %>"
+  />
+  <meta property="twitter:image:width" content="1200" />
+  <meta property="twitter:image:height" content="630" />
+  <meta property="twitter:image:alt" content="<%= domain %>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tailwind.css?t=00T6Q7aq" />
 
   <style>
     body {
