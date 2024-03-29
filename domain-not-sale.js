@@ -13,4 +13,5 @@ module.exports = [
   'ncdai.me',
   'quaric.org.vn',
   'tech.org.vn',
+  'cd.name.vn',
 ];
