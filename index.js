@@ -6,8 +6,8 @@ const cors = require('cors')
 
 const domainCase = require('./domain-case')
 const domainNotSale = require('./domain-not-sale')
+
 const { getOGImageURL } = require('./og')
-// const domainSale = require('./domain-sale')
 
 const port = process.env.PORT || 1408
 
@@ -26,7 +26,6 @@ app.get('/', (req, res) => {
     domain,
     ogImageURL,
     isForSale: !domainNotSale.includes(host)
-    // isForSale: domainSale.includes(host),
   })
 })
 
