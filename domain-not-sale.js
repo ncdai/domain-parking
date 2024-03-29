@@ -14,5 +14,7 @@ module.exports = [
   'quaric.org.vn',
   'tech.org.vn',
   'cd.name.vn',
-  'hugevietnam.com'
+  'hugevietnam.com',
+  'topweb.vn',
+  'verify.vn'
 ]
