@@ -17,6 +17,7 @@ module.exports = {
   'ketnoi.me': 'Ketnoi.me',
   'ncdai.net': 'ncdai.net',
   'ncdai.me': 'ncdai.me',
+  'cd.name.vn': 'CD.name.vn',
   'xr.io.vn': 'XR.io.vn',
   'xr.ai.vn': 'XR.ai.vn',
   'cotienxanh.com': 'CoTienXanh.com',
