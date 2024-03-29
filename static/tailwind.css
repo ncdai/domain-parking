@@ -450,6 +450,9 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 ::-moz-selection {
@@ -464,6 +467,12 @@ body {
   background-color: rgb(64 64 64 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-full-width {
+  display: inline-block;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
 }
 
 *, ::before, ::after {

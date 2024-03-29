@@ -4,10 +4,17 @@
 
 @layer base {
   body {
-    @apply bg-black text-white font-display;
+    @apply bg-black text-white font-display transition-opacity duration-300;
   }
 
   ::selection {
     @apply bg-neutral-700 text-white;
+  }
+
+  .text-full-width {
+    @apply inline-block;
+
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
   }
 }
