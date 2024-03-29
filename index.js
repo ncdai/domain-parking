@@ -1,9 +1,12 @@
+require('dotenv').config()
+
 const express = require('express')
 const app = express()
 const cors = require('cors')
 
 const domainCase = require('./domain-case')
 const domainNotSale = require('./domain-not-sale')
+const { getOGImageURL } = require('./og')
 // const domainSale = require('./domain-sale')
 
 const port = process.env.PORT || 1408
@@ -16,10 +19,13 @@ app.use(cors())
 
 app.get('/', (req, res) => {
   const host = req.get('host')
+  const domain = domainCase[host] || capitalizeFirstLetter(host)
+  const ogImageURL = getOGImageURL(domain)
 
   res.render('home', {
-    domain: domainCase[host] || capitalizeFirstLetter(host),
-    isForSale: !domainNotSale.includes(host),
+    domain,
+    ogImageURL,
+    isForSale: !domainNotSale.includes(host)
     // isForSale: domainSale.includes(host),
   })
 })

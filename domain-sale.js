@@ -34,4 +34,4 @@ module.exports = [
   'px.com.vn',
   'px.io.vn',
   'use.com.vn'
-];
+]

@@ -2,8 +2,8 @@
   "name": "sell-domains",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:iamncdai/sell-domains.git",
-  "author": "Nguyễn Chánh Đại <ncdai@penphy.edu.vn>",
+  "repository": "git@github.com:ncdai/sell-domains.git",
+  "author": "Nguyễn Chánh Đại <dai@chanhdai.com>",
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development nodemon index.js",
@@ -16,12 +16,19 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "mini-svg-data-uri": "^1.4.4"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "nodemon": "^3.0.1",
+    "standard": "^16.0.4",
     "tailwindcss": "^3.4.0"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "global": []
   }
 }
