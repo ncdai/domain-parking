@@ -59,12 +59,13 @@ app.use(async (req, res, next) => {
 app.get('/', (req, res) => {
   const host = req.get('host')
   const domain = domainCase[host] || capitalizeFirstLetter(host)
-  const ogImageURL = getOGImageURL(domain)
+  const isForSale = !domainNotSale.includes(host)
+  const ogImageURL = getOGImageURL(domain, isForSale)
 
   res.render('home', {
     domain,
     ogImageURL,
-    isForSale: !domainNotSale.includes(host)
+    isForSale
   })
 })
 

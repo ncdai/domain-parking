@@ -7,9 +7,9 @@ function getToken (domain) {
   return token
 }
 
-function getOGImageURL (domain) {
+function getOGImageURL (domain, isForSale = false) {
   const token = getToken(domain)
-  return `${process.env.OG_URL}?domain=${domain}&token=${token}`
+  return `${process.env.OG_URL}?domain=${domain}&token=${token}&sale=${String(isForSale)}`
 }
 
 module.exports = {
