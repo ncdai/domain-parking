@@ -13,6 +13,7 @@ module.exports = [
   'ncdai.me',
   'quaric.org.vn',
   'tech.org.vn',
+  'x.org.vn',
   'cd.name.vn',
   'hugevietnam.com',
   'topweb.vn',
