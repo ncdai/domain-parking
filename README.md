@@ -85,6 +85,9 @@ Ubuntu 20.04 server [https://www.digitalocean.com/community/tutorials/initial-se
 **Start Redis**
 
 ```bash
+mkdir redisinsight_data
+chmod 777 redisinsight_data
+
 docker compose up -d
 ```
 
