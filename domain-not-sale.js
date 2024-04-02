@@ -18,5 +18,6 @@ module.exports = [
   'hugevietnam.com',
   'topweb.vn',
   'verify.vn',
-  'cdx.vn'
+  'cdx.vn',
+  'phanmemviet.net'
 ]
