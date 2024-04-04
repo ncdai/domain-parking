@@ -129,6 +129,10 @@
       track_pageview: true,
       persistence: 'localStorage'
     });
+
+    mixpanel.track('view_domain', {
+      domain: '<%= domain.toLowerCase() %>'
+    });
   </script>
 </body>
 
