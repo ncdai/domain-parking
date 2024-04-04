@@ -1,9 +1,9 @@
 {
   "name": "sell-domains",
-  "version": "2.0",
+  "version": "2.1",
   "main": "index.js",
   "repository": "git@github.com:ncdai/sell-domains.git",
-  "author": "Nguyễn Chánh Đại <dai@chanhdai.com>",
+  "author": "Nguyen Chanh Dai <dai@chanhdai.com>",
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development nodemon index.js",
