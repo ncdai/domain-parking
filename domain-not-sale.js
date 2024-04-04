@@ -7,6 +7,8 @@ module.exports = [
   'dai.io.vn',
   'ketnoi.me',
   'maytinh.net',
+  'd.io.vn',
+  'd.id.vn',
   'ncd.com.vn',
   'ncd.io.vn',
   'ncdai.net',
