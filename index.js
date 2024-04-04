@@ -5,7 +5,12 @@ const app = express()
 const cors = require('cors')
 
 const Redis = require('ioredis')
-const redisClient = new Redis(process.env.REDIS_URL)
+
+let redisClient
+
+if (process.env.REDIS_URL) {
+  redisClient = new Redis(process.env.REDIS_URL)
+}
 
 const domainCase = require('./domain-case')
 const domainNotSale = require('./domain-not-sale')
@@ -22,6 +27,11 @@ app.set('view engine', 'ejs')
 app.use(cors())
 
 app.use(async (req, res, next) => {
+  if (!redisClient) {
+    next()
+    return
+  }
+
   const domain = req.hostname
   const cacheKey = `cloudflare:${domain}`
 
@@ -57,7 +67,7 @@ app.use(async (req, res, next) => {
 })
 
 app.get('/', (req, res) => {
-  const host = req.get('host')
+  const host = req.hostname
   const domain = domainCase[host] || capitalizeFirstLetter(host)
   const isForSale = !domainNotSale.includes(host)
   const ogImageURL = getOGImageURL(domain, isForSale)

@@ -52,34 +52,56 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="tailwind.css?t=x0JMzeP5Pq0lyXah" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tailwind.css?t=6X2llCB" />
 </head>
 
 <body style="opacity: 0;">
-  <div class="fixed bg-black bg-grid-white/[0.1] w-full h-full top-0 left-0 flex items-center justify-center p-4">
+  <div class="fixed bg-black bg-grid-white/[0.1] w-full h-full top-0 left-0 flex">
     <div class="absolute top-0 left-0 bottom-0 right-0 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] bg-black pointer-events-none"></div>
 
-    <div class="relative z-10 w-screen space-y-4">
-      <div>
-        <h1 class="font-medium text-center text-full-width bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
-          <%= domain %>
-        </h1>
+    <div class="container relative z-10 flex flex-col w-full">
+      <div class="flex items-center flex-1">
+        <div class="flex-1">
+          <h1 class="font-medium text-center text-transparent text-full-width bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500">
+            <%= domain %>
+          </h1>
+        </div>
       </div>
 
       <div class="sticky bottom-4">
-        <div class="flex flex-wrap gap-4 justify-center items-center flex-col md:flex-row">
-          <% if (isForSale) { %>
-            <span class="flex items-center px-4 py-2 rounded-full font-medium text-neutral-200 select-none">Tên miền đang được rao bán</span>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQtbDIHAXDEvAfLmG4OMN0h6CZOgtkKf4e09HWLwRnFmeEpA/viewform?usp=pp_url&entry.1782982522=<%= encodeURI(domain.toLowerCase()) %>" target="_blank" rel="noreferrer" class="flex rounded-full px-4 py-2 font-medium transition-colors bg-neutral-200 text-neutral-900 hover:bg-neutral-300 select-none">Liên hệ</a>
-          <% } else { %>
-            <span class="px-4 py-2 rounded-full font-medium text-neutral-200 select-none">
-              Website của chúng tôi sẽ sớm được ra mắt
-            </span>
-          <% } %>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-[512px] max-w-full mx-auto">
+          <div class="p-4 text-center border sm:col-span-2 border-neutral-800 bg-neutral-900 rounded-xl">
+            <% if (isForSale) { %>
+              <div class="flex flex-wrap items-center justify-center gap-4">
+                <div class="font-medium text-neutral-200 text-balance">Tên miền đang được rao bán</div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQtbDIHAXDEvAfLmG4OMN0h6CZOgtkKf4e09HWLwRnFmeEpA/viewform?usp=pp_url&entry.1782982522=<%= encodeURI(domain.toLowerCase()) %>" target="_blank" rel="noreferrer" class="flex px-4 py-1 font-medium transition-colors rounded-full select-none bg-neutral-200 text-neutral-900 hover:bg-neutral-300">Liên hệ</a>
+              </div>
+            <% } else { %>
+              <div class="font-medium text-neutral-200 text-balance">
+                Website của chúng tôi sẽ sớm được ra mắt
+              </div>
+            <% } %>
+          </div>
 
-          <a href="https://www.digitalocean.com/?refcode=474b42f30e7d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" title="DigitalOcean Referral Badge" aria-label="DigitalOcean Referral Badge">
-            <img class="block rounded-full h-10 select-none" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" />
+          <a class="col-span-1" href="https://inet.vn/dang-ky-ten-mien?aff=ncdai" target="_blank" title="iNET Affiliate" aria-label="iNET Affiliate">
+            <div class="p-4 space-y-2 transition-all border rounded-xl border-neutral-800 bg-neutral-900 hover:border-neutral-700">
+              <div class="text-center text-neutral-400 whitespace-nowrap">Mã <strong class="font-semibold text-neutral-200" id="js-inet-coupon">CLBKKKXMGB</strong> giảm 20%</div>
+              <div class="flex justify-center">
+                <div class="flex items-center px-3 rounded-md h-9 bg-neutral-900">
+                  <img class="block h-5 select-none" src="/inet-logo.svg" alt="iNET Affiliate" />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="col-span-1" href="https://www.digitalocean.com/?refcode=474b42f30e7d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" title="DigitalOcean Referral Badge" aria-label="DigitalOcean Referral Badge">
+            <div class="p-4 space-y-2 transition-all border rounded-xl border-neutral-800 bg-neutral-900 hover:border-neutral-700">
+              <div class="text-center text-neutral-400 whitespace-nowrap">Nhận <strong class="font-semibold text-neutral-200">$200</strong> dùng 60 ngày</div>
+              <div class="flex justify-center">
+                <img class="block rounded-full select-none h-9" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" />
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -87,6 +109,16 @@
   </div>
 
   <script src="text-full-width.js"></script>
+  <script>
+    document.getElementById('js-inet-coupon').addEventListener('click', function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+
+      const coupon = e.target.textContent;
+      navigator.clipboard.writeText(coupon);
+      alert('Đã sao chép mã giảm giá');
+    });
+  </script>
 </body>
 
 </html>

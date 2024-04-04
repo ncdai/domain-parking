@@ -24,6 +24,13 @@ module.exports = {
         }
       }
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        lg: '2rem'
+      }
+    },
     fontFamily: {
       display: ['"Roboto Condensed"', 'sans-serif']
     }

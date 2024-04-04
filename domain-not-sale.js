@@ -1,5 +1,5 @@
 module.exports = [
-  'localhost:1408',
+  'localhost',
   'design.edu.vn',
   'apple.io.vn',
   'apple.id.vn',
