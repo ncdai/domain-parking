@@ -75,7 +75,9 @@ app.get('/', (req, res) => {
   res.render('home', {
     domain,
     ogImageURL,
-    isForSale
+    isForSale,
+    MIXPANEL_DEBUG: process.env.NODE_ENV === 'development',
+    MIXPANEL_TOKEN: process.env.MIXPANEL_TOKEN
   })
 })
 

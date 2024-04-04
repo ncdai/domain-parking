@@ -30,6 +30,7 @@ OG_SECRET=your_og_secret
 OG_URL=https://chanhdai.com/api/domain/og
 REDIS_URL=redis://:<your_redis_password>@localhost:6379
 CLOUDFLARE_API_TOKEN=your_api_token
+MIXPANEL_TOKEN=your_token
 ```
 
 - `OG_SECRET` `OG_URL`:
