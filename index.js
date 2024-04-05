@@ -40,8 +40,9 @@ app.use(async (req, res, next) => {
 
     if (cachedData) {
       if (cachedData !== '1') {
-        res.status(404)
-        res.send('Domain is not exists')
+        // res.status(404)
+        // res.send('Domain is not exists')
+        res.redirect('https://inet.vn/dang-ky-ten-mien?aff=ncdai')
         return
       }
 
