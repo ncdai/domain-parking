@@ -53,8 +53,9 @@ app.use(async (req, res, next) => {
     await redisClient.set(cacheKey, isExists ? '1' : '0', 'EX', 30 * 24 * 60 * 60) // Expire in 30 days
 
     if (!isExists) {
-      res.status(404)
-      res.send('Domain is not exists')
+      // res.status(404)
+      // res.send('Domain is not exists')
+      res.redirect('https://inet.vn/dang-ky-ten-mien?aff=ncdai')
       return
     }
 

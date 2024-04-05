@@ -74,6 +74,7 @@ Access http://localhost:1408 to see amazing results.
 
 Ubuntu 20.04 server [https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04]
 
+- `firewalls` [https://docs.digitalocean.com/products/networking/firewalls/how-to/manage-droplets/]
 - `nginx` [https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04]
 - `docker` [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04]
 - `docker-compose` [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04]
