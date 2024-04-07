@@ -18,6 +18,8 @@ const domainNotSale = require('./domain-not-sale')
 const { getOGImageURL } = require('./og')
 const { checkDomainExists } = require('./cloudflare')
 
+const packageJSON = require('./package.json')
+
 const port = process.env.PORT || 1408
 
 const capitalizeFirstLetter = (word) => word.charAt(0).toUpperCase() + word.slice(1)
@@ -78,6 +80,7 @@ app.get('/', (req, res) => {
     domain,
     ogImageURL,
     isForSale,
+    version: packageJSON.version,
     MIXPANEL_DEBUG: process.env.NODE_ENV === 'development',
     MIXPANEL_TOKEN: process.env.MIXPANEL_TOKEN
   })

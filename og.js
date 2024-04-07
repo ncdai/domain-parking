@@ -1,4 +1,5 @@
 const { createHmac } = require('node:crypto')
+const packageJSON = require('./package.json')
 
 function getToken (domain) {
   const hmac = createHmac('sha256', process.env.OG_SECRET)
@@ -9,7 +10,7 @@ function getToken (domain) {
 
 function getOGImageURL (domain, isForSale = false) {
   const token = getToken(domain)
-  return `${process.env.OG_URL}?domain=${domain}&token=${token}&sale=${String(isForSale)}`
+  return `${process.env.OG_URL}?domain=${domain}&token=${token}&sale=${String(isForSale)}&v=${packageJSON.version}`
 }
 
 module.exports = {
