@@ -32,7 +32,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      display: ['"Roboto Condensed"', 'sans-serif']
+      display: ['"Roboto Condensed"', 'sans-serif'],
+      serif: ['"Roboto Serif"', 'serif']
     }
   },
   plugins: [
