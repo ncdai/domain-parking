@@ -74,10 +74,12 @@ app.get('/', (req, res) => {
   const host = req.hostname
   const domain = domainCase[host] || capitalizeFirstLetter(host)
   const isForSale = !domainNotSale.includes(host)
+  const canonicalURL = req.protocol + '://' + req.get('host') + req.originalUrl
   const ogImageURL = getOGImageURL(domain, isForSale)
 
   res.render('home', {
     domain,
+    canonicalURL,
     ogImageURL,
     isForSale,
     version: packageJSON.version,
