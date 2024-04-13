@@ -23,4 +23,5 @@ jobs:
         script: |
           cd /root/sell-domains
           git pull
-          /root/.nvm/versions/node/v20.5.0/bin/yarn pm2:reload
+          export PATH=/root/.nvm/versions/node/v20.5.0/bin:/usr/bin:/bin
+          yarn pm2:reload
