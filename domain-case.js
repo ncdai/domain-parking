@@ -21,5 +21,6 @@ module.exports = {
   'xr.io.vn': 'XR.io.vn',
   'xr.ai.vn': 'XR.ai.vn',
   'cotienxanh.com': 'CoTienXanh.com',
-  'phanmemviet.net': 'PhanMemViet.net'
+  'phanmemviet.net': 'PhanMemViet.net',
+  'cd4.net': 'CD4.net'
 }
