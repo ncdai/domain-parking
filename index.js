@@ -13,7 +13,7 @@ if (process.env.REDIS_URL) {
 }
 
 const domainCase = require('./domain-case')
-const domainNotSale = require('./domain-not-sale')
+// const domainNotSale = require('./domain-not-sale')
 
 const { getOGImageURL } = require('./og')
 const { checkDomainExists } = require('./cloudflare')
@@ -73,7 +73,8 @@ app.use(async (req, res, next) => {
 app.get('/', (req, res) => {
   const host = req.hostname
   const domain = domainCase[host] || capitalizeFirstLetter(host)
-  const isForSale = !domainNotSale.includes(host)
+  // const isForSale = !domainNotSale.includes(host)
+  const isForSale = false
   const canonicalURL = req.protocol + '://' + req.get('host') + req.originalUrl
   const ogImageURL = getOGImageURL(domain, isForSale)
 
