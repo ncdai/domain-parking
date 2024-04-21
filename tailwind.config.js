@@ -32,8 +32,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      display: ['"Roboto Condensed"', 'sans-serif'],
-      serif: ['"Roboto Serif"', 'serif']
+      heading: ['"FS Magistral"', 'serif'],
+      body: ['"BT BeauSans"', 'sans-serif']
     }
   },
   plugins: [
