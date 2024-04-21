@@ -64,48 +64,62 @@
 </head>
 
 <body style="opacity: 0;">
-  <div class="fixed bg-black bg-grid-neutral-900 w-full h-full top-0 left-0 flex">
-    <div class="absolute top-0 left-0 bottom-0 right-0 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] bg-black pointer-events-none"></div>
-
+  <div class="fixed bg-black w-full h-full top-0 left-0 flex">
     <div class="container relative z-10 flex flex-col w-full">
-      <div class="flex items-center flex-1">
-        <div class="flex-1">
-          <h1 class="font-heading font-medium text-center text-transparent text-full-width bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500">
-            <%= domain %>
-          </h1>
+      <div class="relative flex items-center flex-1 mt-4 border-x border-t border-neutral-800">
+        <div class="absolute top-0 -right-px w-6 h-6 transform translate-x-1/2 -translate-y-1/2">
+          <div class="absolute h-3 w-full border-b border-neutral-600"></div>
+          <div class="absolute h-full w-3 border-r border-neutral-600"></div>
+        </div>
+
+        <div class="relative flex-1 border-y border-neutral-800">
+          <div class="absolute -top-3 -left-3 w-6 h-6">
+            <div class="absolute h-3 w-full border-b border-neutral-600"></div>
+            <div class="absolute h-full w-3 border-r border-neutral-600"></div>
+          </div>
+
+          <div class="absolute -bottom-px -right-px w-6 h-6 transform translate-x-1/2 translate-y-1/2">
+            <div class="absolute h-3 w-full border-b border-neutral-600"></div>
+            <div class="absolute h-full w-3 border-r border-neutral-600"></div>
+          </div>
+
+          <div class="mx-4 mb-2">
+            <h1 class="font-heading font-medium text-center text-transparent text-full-width bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500">
+              <%= domain %>
+            </h1>
+          </div>
         </div>
       </div>
 
-      <div class="sticky bottom-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-[512px] max-w-full mx-auto">
-          <div class="p-4 text-center border sm:col-span-2 border-neutral-800 relative">
-            <div class="absolute top-0 left-0">
-              <div class="absolute w-4 h-px bg-neutral-600 -top-px -left-2"></div>
-              <div class="absolute w-px h-4 bg-neutral-600 -top-2 -left-px"></div>
-            </div>
+      <div class="relative flex justify-center mb-4 border border-neutral-800">
+        <div class="absolute -top-3 -left-3 w-6 h-6">
+          <div class="absolute h-3 w-full border-b border-neutral-600"></div>
+          <div class="absolute h-full w-3 border-r border-neutral-600"></div>
+        </div>
 
-            <div class="absolute -bottom-px -right-px">
-              <div class="absolute w-4 h-px bg-neutral-600 -top-px -left-2"></div>
-              <div class="absolute w-px h-4 bg-neutral-600 -top-2 -left-px"></div>
-            </div>
+        <div class="absolute -bottom-px -right-px w-6 h-6 transform translate-x-1/2 translate-y-1/2">
+          <div class="absolute h-3 w-full border-b border-neutral-600"></div>
+          <div class="absolute h-full w-3 border-r border-neutral-600"></div>
+        </div>
 
-            <% if (isForSale) { %>
-              <div class="flex flex-wrap items-center justify-center gap-4">
-                <div class="text-yellow-500 text-balance">Tên miền đang được rao bán</div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQtbDIHAXDEvAfLmG4OMN0h6CZOgtkKf4e09HWLwRnFmeEpA/viewform?usp=pp_url&entry.1782982522=<%= encodeURI(domain.toLowerCase()) %>" target="_blank" rel="noreferrer" class="flex px-4 py-1 font-medium transition-colors rounded-full select-none bg-yellow-500 text-neutral-900 hover:bg-yellow-600">Liên hệ</a>
-              </div>
-            <% } else { %>
-              <div class="text-neutral-200 text-balance">
-                Website sẽ sớm được ra mắt
-              </div>
-            <% } %>
-          </div>
+        <div class="p-4 border-x border-neutral-800">
+          <% if (isForSale) { %>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+              <div class="text-yellow-500 text-balance">Tên miền đang được rao bán</div>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQtbDIHAXDEvAfLmG4OMN0h6CZOgtkKf4e09HWLwRnFmeEpA/viewform?usp=pp_url&entry.1782982522=<%= encodeURI(domain.toLowerCase()) %>" target="_blank" rel="noreferrer" class="flex px-4 py-1 font-medium transition-colors select-none bg-yellow-500 text-neutral-900 hover:bg-yellow-600">Liên hệ</a>
+            </div>
+          <% } else { %>
+            <div class="text-neutral-200 text-balance">
+              Website sẽ sớm được ra mắt
+            </div>
+          <% } %>
         </div>
       </div>
     </div>
   </div>
 
   <script src="text-full-width.js"></script>
+
   <script>
     mixpanel.init('<%= MIXPANEL_TOKEN %>', {
       debug: Boolean('<%= MIXPANEL_DEBUG %>'),

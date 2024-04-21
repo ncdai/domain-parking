@@ -16,7 +16,7 @@
   }
 
   body {
-    @apply bg-black text-white font-body transition-opacity duration-300;
+    @apply bg-black text-white font-body transition-opacity duration-300 box-content;
   }
 
   ::selection {
