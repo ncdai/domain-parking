@@ -11,6 +11,7 @@ module.exports = {
   'kysu.vn': 'kysu.vn',
   'topweb.vn': 'TopWeb.vn',
   'metabox.vn': 'MetaBox.vn',
+  't-d.vn': 'T-D.vn',
   'cdx.vn': 'CDX.vn',
   'ncd.com.vn': 'NCD.com.vn',
   'ncd.io.vn': 'NCD.io.vn',
