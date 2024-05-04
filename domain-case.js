@@ -1,6 +1,5 @@
 module.exports = {
   'maytinh.net': 'MayTinh.net',
-  'tienphonggroup.com': 'TienPhongGroup.com',
   'vietgreenfood.com': 'VietGreenFood.com',
   'maytinhviet.com': 'MayTinhViet.com',
   'vuanhadat.com': 'VuaNhaDat.com',
