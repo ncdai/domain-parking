@@ -15,6 +15,7 @@ module.exports = {
   'ncd.com.vn': 'NCD.com.vn',
   'ncd.io.vn': 'NCD.io.vn',
   'ketnoi.me': 'Ketnoi.me',
+  'ncdai.vn': 'ncdai.vn',
   'ncdai.net': 'ncdai.net',
   'ncdai.me': 'ncdai.me',
   'cd.name.vn': 'CD.name.vn',
