@@ -13,5 +13,6 @@ module.exports = {
   'ncdai.net': 'ncdai.net',
   'ncdai.me': 'ncdai.me',
   'cotienxanh.com': 'CoTienXanh.com',
-  'cd8.net': 'cd8.net'
+  'cd8.net': 'cd8.net',
+  'id.id.vn': 'id.id.vn'
 }
