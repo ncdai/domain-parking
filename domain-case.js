@@ -1,7 +1,7 @@
 module.exports = {
   'maytinh.net': 'MayTinh.net',
+  'loc.vn': 'Loc.vn',
   'maytinhviet.com': 'MayTinhViet.com',
-  'khieunai.com': 'KhieuNai.com',
   'kysu.vn': 'KySu.vn',
   'topweb.vn': 'TopWeb.vn',
   'metabox.vn': 'MetaBox.vn',
