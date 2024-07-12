@@ -1,6 +1,6 @@
 {
   "name": "sell-domains",
-  "version": "3.2",
+  "version": "3.3",
   "main": "index.js",
   "repository": "git@github.com:ncdai/sell-domains.git",
   "author": "Nguyen Chanh Dai <dai@chanhdai.com>",
