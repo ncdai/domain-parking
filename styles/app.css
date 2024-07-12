@@ -9,18 +9,12 @@
     font-weight: 500;
   }
 
-  @font-face {
-    font-family: 'BT BeauSans';
-    src: url('./BT-BeauSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-  }
-
   body {
     @apply bg-black text-white font-body transition-opacity duration-300 box-content;
   }
 
   ::selection {
-    @apply bg-neutral-700 text-white;
+    @apply bg-blue-600 text-white;
   }
 
   .text-full-width {

@@ -33,7 +33,7 @@ module.exports = {
     },
     fontFamily: {
       heading: ['"FS Magistral"', 'serif'],
-      body: ['"BT BeauSans"', 'sans-serif']
+      body: ['"Roboto"', 'sans-serif']
     }
   },
   plugins: [

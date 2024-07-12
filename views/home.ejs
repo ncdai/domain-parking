@@ -7,12 +7,7 @@
   <meta name="theme-color" content="black" />
 
   <title><%= domain %></title>
-
-  <% if (isForSale) { %>
-    <meta name="description" content="Tên miền <%= domain %> đang được rao bán." />
-  <% } else { %>
-    <meta name="description" content="Website sẽ sớm được ra mắt." />
-  <% } %>
+  <meta name="description" content="Website sẽ sớm được ra mắt." />
 
   <link rel="canonical" href="<%= canonicalURL %>">
 
@@ -20,11 +15,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="<%= domain %>" />
   <meta property="og:title" content="<%= domain %>" />
-  <% if (isForSale) { %>
-    <meta property="og:description" content="Tên miền <%= domain %> đang được rao bán." />
-  <% } else { %>
-    <meta property="og:description" content="Website sẽ sớm được ra mắt." />
-  <% } %>
+  <meta property="og:description" content="Website sẽ sớm được ra mắt." />
   <meta property="og:locale" content="vi" />
   <meta
     property="og:image"
@@ -38,11 +29,7 @@
   <!-- BEGIN: Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="<%= domain %>" />
-  <% if (isForSale) { %>
-    <meta property="twitter:description" content="Tên miền <%= domain %> đang được rao bán." />
-  <% } else { %>
-    <meta property="twitter:description" content="Website sẽ sớm được ra mắt." />
-  <% } %>
+  <meta property="twitter:description" content="Website sẽ sớm được ra mắt." />
   <meta
     property="twitter:image"
     content="<%= ogImageURL %>"
@@ -54,8 +41,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wdth,wght@0,8..144,50..150,100..900;1,8..144,50..150,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app.css?v=<%= version %>" />
 
   <script type="text/javascript">
@@ -63,7 +49,7 @@
   </script>
 </head>
 
-<body style="opacity: 0;">
+<body class="opacity-0 antialiased">
   <div class="fixed bg-black w-full h-full top-0 left-0 flex">
     <div class="container relative z-10 flex flex-col w-full">
       <div class="relative flex items-center flex-1 mt-4 border-x border-t border-neutral-800">
@@ -102,17 +88,11 @@
           <div class="absolute h-full w-3 border-r border-neutral-600"></div>
         </div>
 
-        <div class="p-4 border-x border-neutral-800">
-          <% if (isForSale) { %>
-            <div class="flex flex-wrap items-center justify-center gap-4">
-              <div class="text-yellow-500 text-balance">Tên miền đang được rao bán</div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQtbDIHAXDEvAfLmG4OMN0h6CZOgtkKf4e09HWLwRnFmeEpA/viewform?usp=pp_url&entry.1782982522=<%= encodeURI(domain.toLowerCase()) %>" target="_blank" rel="noreferrer" class="flex px-4 py-1 font-medium transition-colors select-none bg-yellow-500 text-neutral-900 hover:bg-yellow-600">Liên hệ</a>
-            </div>
-          <% } else { %>
-            <div class="text-neutral-200 text-balance">
-              Website sẽ sớm được ra mắt
-            </div>
-          <% } %>
+        <div class="p-4 border-x border-dashed border-neutral-800">
+          <div class="text-neutral-200 text-balance text-center space-y-0.5">
+            <h2 class="text-lg font-medium">Website sẽ sớm được ra mắt</h2>
+            <p class="text-neutral-400 text-sm">Liên hệ <a href="mailto:tenmien@duck.com?subject=<%= encodeURI(domain.toLowerCase()) %>" target="_blank" rel="noopener noreferrer" class="border-b border-neutral-600 hover:text-white transition-colors">tenmien@duck.com</a> nếu bạn muốn mua tên miền này.</p>
+          </div>
         </div>
       </div>
     </div>
