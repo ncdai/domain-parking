@@ -17,4 +17,5 @@ module.exports = {
   'e.io.vn': 'e.io.vn',
   'uah.me': 'UAH.me',
   'chanhdai.io.vn': 'ChanhDai.io.vn',
+  'aibinhdan.com': 'AIBinhDan.com'
 }
