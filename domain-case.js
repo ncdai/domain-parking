@@ -1,6 +1,5 @@
 module.exports = {
   'maytinh.net': 'MayTinh.net',
-  'loc.vn': 'Loc.vn',
   'kysu.vn': 'KySu.vn',
   'metabox.vn': 'MetaBox.vn',
   't-d.vn': 'T-D.vn',
@@ -16,6 +15,5 @@ module.exports = {
   'e.id.vn': 'e.id.vn',
   'e.io.vn': 'e.io.vn',
   'uah.me': 'UAH.me',
-  'chanhdai.io.vn': 'ChanhDai.io.vn',
   'aibinhdan.com': 'AIBinhDan.com'
 }
