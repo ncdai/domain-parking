@@ -4,74 +4,34 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 
-const Redis = require('ioredis')
-
-let redisClient
-
-if (process.env.REDIS_URL) {
-  redisClient = new Redis(process.env.REDIS_URL)
-}
-
-const domainCase = require('./domain-case')
-
 const { getOGImageURL } = require('./og')
-const { checkDomainExists } = require('./cloudflare')
+
+const DOMAIN_LIST = require('./domain-list')
+const DOMAIN_CASE = require('./domain-case')
 
 const packageJSON = require('./package.json')
 
 const port = process.env.PORT || 1408
 
-const capitalizeFirstLetter = (word) => word.charAt(0).toUpperCase() + word.slice(1)
-
 app.use(express.static('static'))
 app.set('view engine', 'ejs')
 app.use(cors())
 
-app.use(async (req, res, next) => {
-  if (!redisClient) {
+const checkDomain = async (req, res, next) => {
+  const isValidDomain = DOMAIN_LIST.includes(req.hostname)
+
+  if (isValidDomain) {
     next()
     return
   }
 
-  const domain = req.hostname
-  const cacheKey = `cloudflare:${domain}`
+  res.status(404)
+  res.send('Not found')
+}
 
-  try {
-    const cachedData = await redisClient.get(cacheKey)
-
-    if (cachedData) {
-      if (cachedData !== '1') {
-        // res.status(404)
-        // res.send('Domain is not exists')
-        res.redirect('https://zadark.com')
-        return
-      }
-
-      next()
-      return
-    }
-
-    const isExists = await checkDomainExists(domain)
-    await redisClient.set(cacheKey, isExists ? '1' : '0', 'EX', 30 * 24 * 60 * 60) // Expire in 30 days
-
-    if (!isExists) {
-      // res.status(404)
-      // res.send('Domain is not exists')
-      res.redirect('https://zadark.com')
-      return
-    }
-
-    next()
-  } catch (error) {
-    console.error(error)
-    res.status(500)
-    res.send('Internal server error')
-  }
-})
-
-app.get('/', (req, res) => {
+app.get('/', checkDomain, (req, res) => {
   const host = req.hostname
-  const domain = domainCase[host] || capitalizeFirstLetter(host)
+  const domain = DOMAIN_CASE[host] || host
   const canonicalURL = req.protocol + '://' + req.get('host') + req.originalUrl
   const ogImageURL = getOGImageURL(domain)
 
@@ -79,9 +39,7 @@ app.get('/', (req, res) => {
     domain,
     canonicalURL,
     ogImageURL,
-    version: packageJSON.version,
-    MIXPANEL_DEBUG: process.env.NODE_ENV === 'development',
-    MIXPANEL_TOKEN: process.env.MIXPANEL_TOKEN
+    version: packageJSON.version
   })
 })
 
