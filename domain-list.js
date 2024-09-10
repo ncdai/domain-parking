@@ -34,7 +34,6 @@ module.exports = [
   'dai0.com',
   'cd8.net',
 
-  'uah.me',
   'aibinhdan.com',
 
   'kysu.vn',
