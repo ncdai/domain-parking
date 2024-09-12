@@ -8,6 +8,7 @@ module.exports = [
   'vie.com.vn',
   'metabox.vn',
   'web.org.vn',
+  'patent.vn',
 
   'e.id.vn',
   'e.io.vn',
