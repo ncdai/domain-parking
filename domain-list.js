@@ -4,6 +4,7 @@ module.exports = [
   'maytinh.net',
   'yeu.vn',
   'senda.vn',
+  'acer.vn',
   'fshop.vn',
   'vie.com.vn',
   'metabox.vn',
