@@ -34,8 +34,6 @@ module.exports = [
   'ncdai.vn',
   'ncdai.net',
   'ncdai.me',
-  'dai0.com',
-  'cd8.net',
   'cd.id.vn',
 
   'aibinhdan.com',
