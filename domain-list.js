@@ -11,6 +11,7 @@ module.exports = [
   'web.org.vn',
   'patent.vn',
 
+  't.io.vn',
   'e.id.vn',
   'e.io.vn',
   'l.io.vn',
