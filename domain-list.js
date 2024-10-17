@@ -5,7 +5,6 @@ module.exports = [
   'yeu.vn',
   'senda.vn',
   'acer.vn',
-  'fshop.vn',
   'vie.com.vn',
   'metabox.vn',
   'web.org.vn',
@@ -36,8 +35,6 @@ module.exports = [
   'ncdai.net',
   'ncdai.me',
   'cd.id.vn',
-
-  'aibinhdan.com',
 
   'met.vn',
   'vet.vn',
