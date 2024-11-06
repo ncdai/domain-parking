@@ -2,6 +2,7 @@ module.exports = [
   'localhost',
 
   'maytinh.net',
+  'gameonline.vn',
   'yeu.vn',
   'senda.vn',
   'acer.vn',

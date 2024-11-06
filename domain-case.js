@@ -1,1 +1,3 @@
-module.exports = {}
+module.exports = {
+  'gameonline.vn': 'GameOnline.vn'
+}
