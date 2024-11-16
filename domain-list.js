@@ -30,6 +30,7 @@ module.exports = [
   'design.io.vn',
   'design.id.vn',
 
+  'motcal.com',
   'wocel.com',
 
   'tech.io.vn',
