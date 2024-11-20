@@ -8,6 +8,8 @@ module.exports = [
   'acer.vn',
   'mat.vn',
 
+  'hcmcmetro.net',
+
   'gameonline.vn',
   'gameonline.com.vn',
 
@@ -48,6 +50,5 @@ module.exports = [
   't-d.vn',
   'cdx.vn',
   'ncd.com.vn',
-  'ketnoi.me',
-  'cotienxanh.com'
+  'ketnoi.me'
 ]
