@@ -49,5 +49,7 @@ module.exports = [
   'kysu.vn',
   'cdx.vn',
   'ncd.com.vn',
-  'ketnoi.me'
+  'ketnoi.me',
+
+  'daifam.com'
 ]
