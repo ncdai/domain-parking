@@ -8,6 +8,7 @@ module.exports = [
   'acer.vn',
   'mat.vn',
   'gor.vn',
+  'thin.vn',
 
   'hcmcmetro.net',
 
