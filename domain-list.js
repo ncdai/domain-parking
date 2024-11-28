@@ -4,20 +4,18 @@ module.exports = [
   'maytinh.net',
   'yeu.vn',
   'senda.vn',
-  'send.vn',
   'acer.vn',
   'mat.vn',
   'gor.vn',
   'thin.vn',
-
-  'hcmcmetro.net',
+  'send.vn',
 
   'gameonline.vn',
   'gameonline.com.vn',
 
+  'web.org.vn',
   'vie.com.vn',
   'metabox.vn',
-  'web.org.vn',
   'patent.vn',
 
   't.io.vn',
@@ -34,24 +32,18 @@ module.exports = [
   'design.io.vn',
   'design.id.vn',
 
+  'qr.io.vn',
   'tech.io.vn',
-  'box.io.vn',
   'vision.io.vn',
   'english.io.vn',
-  'qr.io.vn',
+  'box.io.vn',
   'vang.io.vn',
-
-  'ncdai.vn',
-  'ncdai.net',
-  'ncdai.me',
-  'cd.id.vn',
 
   'met.vn',
   'vet.vn',
   'kysu.vn',
   'cdx.vn',
   'ncd.com.vn',
-  'ketnoi.me',
-
-  'daifam.com'
+  'cd.id.vn',
+  'ketnoi.me'
 ]
