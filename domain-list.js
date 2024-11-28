@@ -5,8 +5,8 @@ module.exports = [
   'yeu.vn',
   'senda.vn',
   'acer.vn',
-  'mat.vn',
   'gor.vn',
+  'mat.vn',
   'thin.vn',
   'send.vn',
 
