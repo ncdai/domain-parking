@@ -7,6 +7,7 @@ module.exports = [
   'send.vn',
   'acer.vn',
   'mat.vn',
+  'gor.vn',
 
   'hcmcmetro.net',
 
