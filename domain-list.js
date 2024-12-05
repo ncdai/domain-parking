@@ -7,7 +7,6 @@ module.exports = [
   'acer.vn',
   'gor.vn',
   'mat.vn',
-  'thin.vn',
   'send.vn',
 
   'gameonline.vn',
