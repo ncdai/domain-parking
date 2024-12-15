@@ -84,7 +84,16 @@
 
           <div class="mx-4 mb-2">
             <h1 class="font-heading font-medium text-center text-transparent text-full-width bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500">
-              <%= domain %>
+              <%
+                const renderDomain = domain
+                  .split('.')
+                  .map((part, index, arr) => index < arr.length - 1
+                    ? `${part}<span class="text-neutral-600">.</span>`
+                    : part
+                  )
+                  .join('');
+              %>
+              <%- renderDomain %>
             </h1>
           </div>
         </div>
@@ -104,7 +113,7 @@
         <div class="p-4 sm:border-x border-dashed border-neutral-800">
           <div class="text-balance text-center space-y-0.5">
             <h2 class="text-lg font-medium text-neutral-200">The website will be launched soon</h2>
-            <p class="text-neutral-400"><a href="mailto:dai@chanhdai.com?subject=<%= domain %>" class="text-neutral-200 border-b border-blue-500 hover:border-b-2">Contact us</a> if you're interested in the domain.</p>
+            <p class="text-neutral-400"><a href="mailto:dai@chanhdai.com?subject=<%= domain %>" class="text-neutral-200 border-b border-blue-600 hover:border-b-2">Contact us</a> if you're interested in the domain.</p>
           </div>
         </div>
       </div>
