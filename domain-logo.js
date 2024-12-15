@@ -15,5 +15,9 @@ module.exports = {
   'gameonline.com.vn': 'logo/gameonline.vn.png',
 
   'apple.io.vn': 'logo/apple.io.vn.png',
-  'apple.id.vn': 'logo/apple.io.vn.png'
+  'apple.id.vn': 'logo/apple.io.vn.png',
+
+  'dainity.com': 'logo/dainity.com.png',
+  'dainity.vn': 'logo/dainity.com.png',
+  'dainity.net': 'logo/dainity.com.png'
 }
