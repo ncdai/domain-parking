@@ -9,8 +9,8 @@
   <title><%= domain %></title>
   <meta name="description" content="The website will be launched soon." />
 
-  <% if (faviconURL) { %>
-    <link rel="icon" type="image/png" href="<%= faviconURL %>">
+  <% if (logoURL) { %>
+    <link rel="icon" type="image/png" href="<%= logoURL %>">
   <% } %>
 
   <link rel="canonical" href="<%= canonicalURL %>">
@@ -88,8 +88,14 @@
           <div class="absolute h-full w-3 border-r border-neutral-600"></div>
         </div>
 
-        <div class="p-4 border-x border-dashed border-neutral-800">
-          <div class="text-balance text-center space-y-0.5">
+        <div class="border-x border-dashed border-neutral-800">
+          <% if (logoURL) { %>
+            <div class="border-b border-neutral-800 p-4">
+              <img src="<%= logoURL %>" alt="<%= domain %>" class="h-16 mx-auto" />
+            </div>
+          <% } %>
+
+          <div class="text-balance text-center space-y-0.5 p-4">
             <h2 class="text-lg font-medium text-neutral-200">The website will be launched soon</h2>
             <p class="text-neutral-400"><a href="mailto:dai@chanhdai.com?subject=<%= domain %>" class="text-neutral-200 border-b border-blue-500 hover:border-b-2">Contact us</a> if you're interested in the domain.</p>
           </div>

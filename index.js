@@ -8,7 +8,7 @@ const { getOGImageURL } = require('./og')
 
 const DOMAIN_LIST = require('./domain-list')
 const DOMAIN_CASE = require('./domain-case')
-const DOMAIN_ICON = require('./domain-icon')
+const DOMAIN_LOGO = require('./domain-logo')
 
 const packageJSON = require('./package.json')
 
@@ -33,13 +33,13 @@ const checkDomain = async (req, res, next) => {
 app.get('/', checkDomain, (req, res) => {
   const host = req.hostname
   const domain = DOMAIN_CASE[host] || host
-  const faviconURL = DOMAIN_ICON[host] || 'favicons/default.png'
+  const logoURL = DOMAIN_LOGO[host] || 'logo/default.png'
   const canonicalURL = req.protocol + '://' + req.get('host') + req.originalUrl
   const ogImageURL = getOGImageURL(domain)
 
   res.render('home', {
     domain,
-    faviconURL,
+    logoURL,
     canonicalURL,
     ogImageURL,
     version: packageJSON.version
