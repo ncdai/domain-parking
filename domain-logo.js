@@ -9,7 +9,7 @@ module.exports = {
   'design.id.vn': 'logo/design.edu.vn.png',
 
   'senda.vn': 'logo/senda.vn.png',
-  'send.vn': 'logo/senda.vn.png',
+  'send.vn': 'logo/send.vn.png',
 
   'gameonline.vn': 'logo/gameonline.vn.png',
   'gameonline.com.vn': 'logo/gameonline.vn.png',
