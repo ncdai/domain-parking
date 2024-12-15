@@ -9,6 +9,10 @@
   <title><%= domain %></title>
   <meta name="description" content="The website will be launched soon." />
 
+  <% if (faviconURL) { %>
+    <link rel="icon" type="image/png" href="<%= faviconURL %>">
+  <% } %>
+
   <link rel="canonical" href="<%= canonicalURL %>">
 
   <!-- BEGIN: Open Graph -->
