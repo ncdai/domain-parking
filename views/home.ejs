@@ -51,8 +51,21 @@
 
 <body class="opacity-0 antialiased">
   <div class="fixed bg-black w-full h-full top-0 left-0 flex">
-    <div class="container relative z-10 flex flex-col w-full">
-      <div class="relative flex items-center flex-1 mt-4 border-x border-t border-neutral-800">
+    <div class="container relative z-10 flex flex-col w-full pt-4">
+      <% if (logoURL) { %>
+        <div class="relative flex justify-center border-t border-x border-neutral-800">
+          <div class="absolute -top-3 -left-3 w-6 h-6">
+            <div class="absolute h-3 w-full border-b border-neutral-600"></div>
+            <div class="absolute h-full w-3 border-r border-neutral-600"></div>
+          </div>
+
+          <div class="p-4 border-x border-dashed border-neutral-800">
+            <img src="<%= logoURL %>" alt="<%= domain %>" class="h-12 mx-auto" />
+          </div>
+        </div>
+      <% } %>
+
+      <div class="relative flex items-center flex-1 border-t border-x border-neutral-800">
         <div class="absolute top-0 -right-px w-6 h-6 transform translate-x-1/2 -translate-y-1/2">
           <div class="absolute h-3 w-full border-b border-neutral-600"></div>
           <div class="absolute h-full w-3 border-r border-neutral-600"></div>
@@ -88,14 +101,8 @@
           <div class="absolute h-full w-3 border-r border-neutral-600"></div>
         </div>
 
-        <div class="border-x border-dashed border-neutral-800">
-          <% if (logoURL) { %>
-            <div class="border-b border-neutral-800 p-4">
-              <img src="<%= logoURL %>" alt="<%= domain %>" class="h-16 mx-auto" />
-            </div>
-          <% } %>
-
-          <div class="text-balance text-center space-y-0.5 p-4">
+        <div class="p-4 border-x border-dashed border-neutral-800">
+          <div class="text-balance text-center space-y-0.5">
             <h2 class="text-lg font-medium text-neutral-200">The website will be launched soon</h2>
             <p class="text-neutral-400"><a href="mailto:dai@chanhdai.com?subject=<%= domain %>" class="text-neutral-200 border-b border-blue-500 hover:border-b-2">Contact us</a> if you're interested in the domain.</p>
           </div>
