@@ -31,6 +31,8 @@ module.exports = [
   'design.io.vn',
   'design.id.vn',
 
+  'school.edu.vn',
+
   'dainity.com',
   'dainity.vn',
   'dainity.net',

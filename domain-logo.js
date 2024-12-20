@@ -8,6 +8,8 @@ module.exports = {
   'design.io.vn': 'logo/design.edu.vn.png',
   'design.id.vn': 'logo/design.edu.vn.png',
 
+  'school.edu.vn': 'logo/school.edu.vn.png',
+
   'senda.vn': 'logo/senda.vn.png',
   'send.vn': 'logo/send.vn.png',
 
