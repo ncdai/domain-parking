@@ -3,8 +3,9 @@
   "[html]": {
     "editor.formatOnSave": false
   },
-  "[scss]": {
-    "editor.formatOnSave": true
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "standard.enable": true,
   "standard.autoFixOnSave": true,

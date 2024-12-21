@@ -1,21 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'media',
   content: ['./views/**/*.{ejs, js, html}'],
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#EAF3FF',
-          100: '#CED8E4',
-          200: '#B2BECD',
-          300: '#94A3B7',
-          400: '#7789A2',
-          500: '#5D7088',
-          600: '#48576B',
-          700: '#323E4D', // primary
-          800: '#1D2531',
-          900: '#040D17'
-        }
+        background: 'rgb(var(--background))',
+        foreground: 'rgb(var(--foreground))',
+        'muted-foreground': 'rgb(var(--muted-foreground))',
+        border: 'rgb(var(--border))',
+        plus: 'rgb(var(--plus))'
       }
     },
     container: {

@@ -10,7 +10,7 @@ function getToken (domain = '') {
 
 function getOGImageURL (domain = '') {
   const token = getToken(domain)
-  return `${process.env.OG_URL}?domain=${domain}&token=${token}&v=${packageJSON.version}`
+  return `${process.env.OG_URL}?domain=${domain}&theme=light&token=${token}&v=${packageJSON.version}`
 }
 
 module.exports = {
