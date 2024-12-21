@@ -2,7 +2,7 @@
 
 ## Overview
 
-The application allows you to create a temporary website: "**Domain name is for sale**" or "**Website will be launched soon**" with a simple and modern interface. The website will display your domain name, and the notification text.
+The application allows you to create a temporary website: "**The domain name is for sale**" or "**The website will be launched soon**" with a simple and modern interface. The website will display your domain name, and the notification text.
 
 - The application automatically creates a cover photo when you share a domain name on social networks.
 
@@ -30,6 +30,7 @@ OG_URL=https://chanhdai.com/api/domain/og
 
 - `domain-list.js`: List the domain names that are for sale.
 - `domain-case.js`: Specify how domain names are displayed.
+- `domain-logo.js`: Specify the logo to be displayed for each domain.
 
 ### Install Packages
 
