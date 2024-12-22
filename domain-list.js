@@ -1,5 +1,6 @@
 module.exports = [
   'localhost',
+  'chanhdai-macbook.local',
 
   'maytinh.net',
   'yeu.vn',
