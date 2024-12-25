@@ -21,7 +21,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SERVER_PORT }}
         script: |
-          cd /root/sell-domains
+          cd /root/domain-parking
           git pull
           export PATH=/root/.nvm/versions/node/v20.5.0/bin:/usr/bin:/bin
           yarn pm2:reload

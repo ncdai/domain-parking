@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'sell-domains',
+      name: 'domain-parking',
       script: 'yarn start',
       env: {
         NODE_ENV: 'development'

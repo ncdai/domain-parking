@@ -1,8 +1,8 @@
 {
-  "name": "sell-domains",
+  "name": "domain-parking",
   "version": "3.4.8",
   "main": "index.js",
-  "repository": "git@github.com:ncdai/sell-domains.git",
+  "repository": "git@github.com:ncdai/domain-parking.git",
   "author": "Nguyen Chanh Dai <dai@chanhdai.com>",
   "license": "MIT",
   "scripts": {

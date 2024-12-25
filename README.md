@@ -1,4 +1,4 @@
-# sell-domains
+# Domain Parking
 
 ## Overview
 
@@ -73,7 +73,7 @@ yarn pm2:start
 Update the `nginx.conf` file content to match your domain name. Then run the following command:
 
 ```bash
-sudo ln -s /root/sell-domains/nginx.conf /etc/nginx/sites-enabled/sell-domains
+sudo ln -s /root/domain-parking/nginx.conf /etc/nginx/sites-enabled/domain-parking
 
 nginx -t
 systemctl restart nginx
