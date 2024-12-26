@@ -20,5 +20,6 @@ module.exports = {
   'apple.io.vn': 'logo/apple.io.vn.png',
   'apple.id.vn': 'logo/apple.io.vn.png',
 
-  'english.io.vn': 'logo/english.io.vn.png'
+  'english.io.vn': 'logo/english.io.vn.png',
+  'vang.io.vn': 'logo/vang.io.vn.png'
 }
