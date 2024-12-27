@@ -1,5 +1,5 @@
 module.exports = {
-  localhost: 'logo/senda.vn.png',
+  localhost: 'logo/maytinh.net.png',
 
   'maytinh.net': 'logo/maytinh.net.png',
   'yeu.vn': 'logo/yeu.vn.png',
