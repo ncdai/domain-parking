@@ -47,5 +47,5 @@ app.get('/', checkDomain, (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Sell Domains app listening on port ${port}`)
+  console.log(`Domain Parking app listening on port ${port}`)
 })

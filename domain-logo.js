@@ -15,6 +15,7 @@ module.exports = {
   'senda.vn': 'logo/senda.vn.png',
   'send.vn': 'logo/send.vn.png',
   'cdx.vn': 'logo/cdx.vn.png',
+  'metabox.vn': 'logo/metabox.vn.png',
 
   'gameonline.vn': 'logo/gameonline.vn.png',
   'gameonline.com.vn': 'logo/gameonline.vn.png',
