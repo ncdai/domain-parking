@@ -4,6 +4,7 @@ module.exports = {
   'maytinh.net': 'logo/maytinh.net.png',
   'yeu.vn': 'logo/yeu.vn.png',
   'acer.vn': 'logo/acer.vn.png',
+  'mat.vn': 'logo/mat.vn.png',
 
   'design.edu.vn': 'logo/design.edu.vn.png',
   'design.io.vn': 'logo/design.edu.vn.png',
