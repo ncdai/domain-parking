@@ -28,5 +28,13 @@ module.exports = {
   'box.io.vn': 'logo/box.io.vn.png',
 
   'patent.vn': 'logo/patent.vn.png',
-  'vet.vn': 'logo/vet.vn.png'
+  'vet.vn': 'logo/vet.vn.png',
+
+  'd.io.vn': 'logo/d.io.vn.png',
+  'd.id.vn': 'logo/d.io.vn.png',
+  't.io.vn': 'logo/t.io.vn.png',
+  'e.id.vn': 'logo/e.io.vn.png',
+  'e.io.vn': 'logo/e.io.vn.png',
+  'l.io.vn': 'logo/l.io.vn.png',
+  'v.io.vn': 'logo/v.io.vn.png'
 }
