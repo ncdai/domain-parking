@@ -18,6 +18,8 @@ module.exports = [
   'metabox.vn',
   'patent.vn',
 
+  'd.io.vn',
+  'd.id.vn',
   't.io.vn',
   'e.id.vn',
   'e.io.vn',
