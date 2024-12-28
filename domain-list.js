@@ -47,7 +47,6 @@ module.exports = [
 
   'met.vn',
   'vet.vn',
-  'kysu.vn',
   'cdx.vn',
   'ncd.com.vn',
   'cd.id.vn',

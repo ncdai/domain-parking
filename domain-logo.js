@@ -25,6 +25,7 @@ module.exports = {
 
   'english.io.vn': 'logo/english.io.vn.png',
   'vang.io.vn': 'logo/vang.io.vn.png',
+  'box.io.vn': 'logo/box.io.vn.png',
 
   'patent.vn': 'logo/patent.vn.png',
   'vet.vn': 'logo/vet.vn.png'
