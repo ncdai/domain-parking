@@ -1,5 +1,5 @@
 module.exports = {
-  localhost: 'logo/patent.vn.png',
+  localhost: 'logo/design.edu.vn.png',
 
   'maytinh.net': 'logo/maytinh.net.png',
   'yeu.vn': 'logo/yeu.vn.png',
@@ -25,7 +25,6 @@ module.exports = {
 
   'english.io.vn': 'logo/english.io.vn.png',
   'vang.io.vn': 'logo/vang.io.vn.png',
-  'box.io.vn': 'logo/box.io.vn.png',
 
   'patent.vn': 'logo/patent.vn.png',
   'vet.vn': 'logo/vet.vn.png',

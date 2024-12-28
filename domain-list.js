@@ -44,13 +44,11 @@ module.exports = [
   'tech.io.vn',
   'vision.io.vn',
   'english.io.vn',
-  'box.io.vn',
   'vang.io.vn',
 
   'met.vn',
   'vet.vn',
   'cdx.vn',
   'ncd.com.vn',
-  'cd.id.vn',
-  'ketnoi.me'
+  'cd.id.vn'
 ]
