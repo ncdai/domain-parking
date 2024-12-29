@@ -36,6 +36,7 @@ module.exports = [
 
   'school.edu.vn',
 
+  'opacal.com',
   'dainity.com',
   'dainity.vn',
   'dainity.net',
