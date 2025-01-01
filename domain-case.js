@@ -1,6 +1,7 @@
 module.exports = {
   localhost: 'design.edu.vn',
 
+  'hqs.vn': 'High Quality Software',
   'maytinh.net': 'MayTinh.net',
   'gameonline.vn': 'GameOnline.vn',
   'gameonline.com.vn': 'GameOnline.com.vn',
