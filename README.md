@@ -87,4 +87,4 @@ systemctl restart nginx
 
 ---
 
-> © 2024 Quaric Co., Ltd.
+> © 2025 Quaric Co., Ltd.
