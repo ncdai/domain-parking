@@ -2,11 +2,11 @@ module.exports = [
   'localhost',
   'chanhdai-macbook.local',
 
-  'hqs.vn',
+  'vinagem.com',
   'maytinh.net',
-  'yeu.vn',
   'senda.vn',
   'acer.vn',
+  'hqs.vn',
   'gor.vn',
   'mat.vn',
   'send.vn',

@@ -1,9 +1,9 @@
 module.exports = {
   localhost: 'logo/design.edu.vn.png',
 
-  'hqs.vn': 'logo/hqs.vn.png',
+  'vinagem.com': 'logo/vinagem.com.png',
   'maytinh.net': 'logo/maytinh.net.png',
-  'yeu.vn': 'logo/yeu.vn.png',
+  'hqs.vn': 'logo/hqs.vn.png',
   'acer.vn': 'logo/acer.vn.png',
   'mat.vn': 'logo/mat.vn.png',
 

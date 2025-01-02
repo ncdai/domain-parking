@@ -1,12 +1,13 @@
 module.exports = {
   localhost: 'design.edu.vn',
 
-  'hqs.vn': 'High Quality Software',
+  'vinagem.com': 'VinaGem.com',
   'maytinh.net': 'MayTinh.net',
   'gameonline.vn': 'GameOnline.vn',
   'gameonline.com.vn': 'GameOnline.com.vn',
-  'cdx.vn': 'Chuyển Đổi Xanh',
   'metabox.vn': 'MetaBox.vn',
+  'cdx.vn': 'Chuyển Đổi Xanh',
+  'hqs.vn': 'High Quality Software',
 
   'd.io.vn': 'D.io.vn',
   'd.id.vn': 'D.id.vn',
