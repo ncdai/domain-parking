@@ -19,7 +19,7 @@ app.set('view engine', 'ejs')
 app.use(cors())
 
 const checkDomain = async (req, res, next) => {
-  const isValidDomain = DOMAIN_LIST.includes(req.hostname)
+  const isValidDomain = DOMAIN_LIST.has(req.hostname.toLowerCase())
 
   if (isValidDomain) {
     next()

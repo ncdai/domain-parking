@@ -1,4 +1,4 @@
-module.exports = [
+module.exports = new Set([
   'localhost',
   'chanhdai-macbook.local',
 
@@ -53,4 +53,4 @@ module.exports = [
   'cdx.vn',
   'ncd.com.vn',
   'cd.id.vn'
-]
+])
