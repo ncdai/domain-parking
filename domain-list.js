@@ -38,9 +38,6 @@ module.exports = new Set([
   'school.edu.vn',
 
   'opacal.com',
-  'dainity.com',
-  'dainity.vn',
-  'dainity.net',
 
   'qr.io.vn',
   'tech.io.vn',
