@@ -38,5 +38,7 @@ module.exports = {
   'e.io.vn': 'logo/e.io.vn.png',
   'l.io.vn': 'logo/l.io.vn.png',
   'v.io.vn': 'logo/v.io.vn.png',
-  '8.io.vn': 'logo/8.io.vn.png'
+  '8.io.vn': 'logo/8.io.vn.png',
+
+  'vinalogo.com': 'logo/vinalogo.com.png'
 }
