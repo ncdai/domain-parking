@@ -15,5 +15,7 @@ module.exports = {
   'e.id.vn': 'E.id.vn',
   'e.io.vn': 'E.io.vn',
   'l.io.vn': 'L.io.vn',
-  'v.io.vn': 'V.io.vn'
+  'v.io.vn': 'V.io.vn',
+
+  'vinalogo.com': 'VinaLogo.com'
 }
