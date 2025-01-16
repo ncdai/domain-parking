@@ -38,7 +38,6 @@ module.exports = new Set([
   'school.edu.vn',
 
   'opacal.com',
-  'vinalogo.com',
 
   'qr.io.vn',
   'tech.io.vn',
