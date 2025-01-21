@@ -8,6 +8,7 @@ module.exports = {
   'metabox.vn': 'MetaBox.vn',
   'cdx.vn': 'Chuyển Đổi Xanh',
   'hqs.vn': 'High Quality Software',
+  'dio.vn': 'Dio.vn',
 
   'd.io.vn': 'D.io.vn',
   'd.id.vn': 'D.id.vn',

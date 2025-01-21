@@ -7,6 +7,7 @@ module.exports = new Set([
   'senda.vn',
   'acer.vn',
   'hqs.vn',
+  'dio.vn',
   'gor.vn',
   'mat.vn',
   'send.vn',
