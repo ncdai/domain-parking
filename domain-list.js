@@ -9,8 +9,6 @@ module.exports = new Set([
   'hqs.vn',
   'dio.vn',
   'gor.vn',
-  'mat.vn',
-  'send.vn',
 
   'gameonline.vn',
   'gameonline.com.vn',
@@ -46,7 +44,6 @@ module.exports = new Set([
   'english.io.vn',
   'vang.io.vn',
 
-  'met.vn',
   'vet.vn',
   'cdx.vn',
   'ncd.com.vn',

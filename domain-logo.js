@@ -5,7 +5,6 @@ module.exports = {
   'maytinh.net': 'logo/maytinh.net.png',
   'hqs.vn': 'logo/hqs.vn.png',
   'acer.vn': 'logo/acer.vn.png',
-  'mat.vn': 'logo/mat.vn.png',
 
   'design.edu.vn': 'logo/design.edu.vn.png',
   'design.io.vn': 'logo/design.edu.vn.png',
@@ -14,7 +13,6 @@ module.exports = {
   'school.edu.vn': 'logo/school.edu.vn.png',
 
   'senda.vn': 'logo/senda.vn.png',
-  'send.vn': 'logo/send.vn.png',
   'cdx.vn': 'logo/cdx.vn.png',
   'metabox.vn': 'logo/metabox.vn.png',
   'vie.com.vn': 'logo/v.io.vn.png',
