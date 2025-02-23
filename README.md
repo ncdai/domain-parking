@@ -17,14 +17,9 @@ The application allows you to create a temporary website: "**The domain name is 
 Create `.env` file with the following content:
 
 ```bash
-PORT=1408
-OG_SECRET=your_og_secret
-OG_URL=https://chanhdai.com/api/domain/og
+PORT=5556
+OG_URL=https://chanhdai.com/og/domain
 ```
-
-- `OG_SECRET` `OG_URL`:
-  - You can create your own **OG Image** generation service using Next.js according to the following instructions https://vercel.com/docs/functions/og-image-generation/og-image-examples#encrypting-parameters
-  - I will open source **OG Image** generation service in the near future.
 
 ### Configure Domain Display
 
@@ -45,7 +40,7 @@ yarn tailwind:watch
 yarn dev
 ```
 
-Access http://localhost:1408 to see amazing results.
+Access http://localhost:5556 to see amazing results.
 
 ### Deploy to Production
 
@@ -84,7 +79,3 @@ systemctl restart nginx
 1. Add your domains to Cloudflare [https://developers.cloudflare.com/fundamentals/setup/manage-domains/add-site/]
 2. Point domain names to your Server IP [https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/]
 3. Access your domains to see amazing results.
-
----
-
-> © 2025 Quaric Co., Ltd.

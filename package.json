@@ -1,6 +1,6 @@
 {
   "name": "domain-parking",
-  "version": "3.4.9",
+  "version": "3.4.10",
   "main": "index.js",
   "repository": "git@github.com:ncdai/domain-parking.git",
   "author": "Nguyen Chanh Dai <dai@chanhdai.com>",
