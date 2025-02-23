@@ -17,7 +17,7 @@ The application allows you to create a temporary website: "**The domain name is 
 Create `.env` file with the following content:
 
 ```bash
-PORT=5556
+PORT=5558
 OG_URL=https://chanhdai.com/og/domain
 ```
 
@@ -40,7 +40,7 @@ yarn tailwind:watch
 yarn dev
 ```
 
-Access http://localhost:5556 to see amazing results.
+Access http://localhost:5558 to see amazing results.
 
 ### Deploy to Production
 

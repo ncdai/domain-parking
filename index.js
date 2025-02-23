@@ -12,7 +12,7 @@ const DOMAIN_LOGO = require('./domain-logo')
 
 const packageJSON = require('./package.json')
 
-const port = process.env.PORT || 5556
+const port = process.env.PORT || 5558
 
 app.use(express.static('static'))
 app.set('view engine', 'ejs')
