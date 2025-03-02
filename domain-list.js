@@ -45,7 +45,6 @@ module.exports = new Set([
   'vang.io.vn',
 
   'vet.vn',
-  'cdx.vn',
   'ncd.com.vn',
   'cd.id.vn'
 ])

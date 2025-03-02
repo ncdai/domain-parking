@@ -6,7 +6,6 @@ module.exports = {
   'gameonline.vn': 'GameOnline.vn',
   'gameonline.com.vn': 'GameOnline.com.vn',
   'metabox.vn': 'MetaBox.vn',
-  'cdx.vn': 'Chuyển Đổi Xanh',
   'hqs.vn': 'High Quality Software',
   'dio.vn': 'Dio.vn',
 
