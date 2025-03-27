@@ -13,6 +13,7 @@ module.exports = {
   'school.edu.vn': 'logo/school.edu.vn.png',
 
   'senda.vn': 'logo/senda.vn.png',
+  'thegioiauto.vn': 'logo/thegioiauto.vn.png',
   'metabox.vn': 'logo/metabox.vn.png',
   'vie.com.vn': 'logo/v.io.vn.png',
 

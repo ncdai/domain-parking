@@ -6,6 +6,7 @@ module.exports = new Set([
   'maytinh.net',
   'senda.vn',
   'acer.vn',
+  'thegioiauto.vn',
   'hqs.vn',
   'dio.vn',
   'gor.vn',
