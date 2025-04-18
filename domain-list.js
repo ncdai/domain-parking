@@ -11,6 +11,8 @@ module.exports = new Set([
   'dio.vn',
   'gor.vn',
 
+  'thanhmytay.vn',
+
   'gameonline.vn',
   'gameonline.com.vn',
 

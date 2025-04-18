@@ -32,8 +32,8 @@ const checkDomain = async (req, res, next) => {
 
 app.get('/', checkDomain, (req, res) => {
   const host = req.hostname
-  const domain = DOMAIN_CASE[host] || host
-  const logoURL = DOMAIN_LOGO[host] || 'logo/default.png'
+  const domain = DOMAIN_CASE.get(host) || host
+  const logoURL = DOMAIN_LOGO.get(host) || 'logo/default.png'
   const canonicalURL = req.protocol + '://' + req.get('host') + req.originalUrl
   const ogImageURL = getOGImageURL(domain)
 
