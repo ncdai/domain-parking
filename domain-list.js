@@ -39,6 +39,7 @@ module.exports = new Set([
 
   'school.edu.vn',
 
+  'dai0.com',
   'opacal.com',
 
   'qr.io.vn',
